@@ -1,0 +1,83 @@
+$mainColor: #173E75
+
+//  Elements
+*
+  margin: 0
+  padding: 0
+html, body 
+  margin: 0
+  padding: 0
+  height: 100%
+  font-family: Consolas
+
+
+//  Container
+.wrap
+  width: 980px
+  margin: 0 auto
+
+.wrap:after 
+  display: table
+  content: ''
+  clear: both
+
+.wrap.bg-lightgray 
+  background-color: #fefefe
+
+.wrapper 
+  width: 100%
+  min-width: 1240px
+  min-height: 100%
+  position: relative
+
+
+//  Normal
+.float-right
+  float: right
+
+.float-left 
+  float: left
+
+.clear 
+  clear: both
+
+
+//  Fonts
+.font-sm
+  font-size: 12px
+
+.bold
+  font-weight: bold
+
+.white
+  color: #fff
+
+.bg-main
+  background-color: $mainColor
+
+
+//  Positions
+.no-padding
+  padding: 0
+
+$dirList: left, right, top, bottom
+@for $i from 1 through 10
+  .padding-#{$i*5}
+    padding: #{$i*5}px
+  @each $dir in $dirList
+    .padding-#{$dir}-#{$i*5}
+      padding-#{$dir}: #{$i*5}px
+
+
+
+//.padding-5
+//  adding: 5px
+//.padding-10
+//  padding: 10px
+//.padding-15
+//  padding: 15px
+//.no-margin
+//  margin: 0
+//
+//.margin-top-20
+//  margin-top: 20px

@@ -1,0 +1,161 @@
+$mainColor: #173E75
+
+
+
+#header 
+  padding: 0 30px
+
+#user-menu 
+  float: left
+  list-style: none
+  margin-top: 20px
+
+#user-menu li 
+  float: left
+  width: 30px
+  height: 30px
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 1px solid #fff
+  text-align: center
+  line-height: 30px
+  background: #fff
+  color: $mainColor
+  margin: 0 10px
+  cursor: pointer
+
+#user-menu li:hover 
+  background: #d68101
+  color: #fff
+  border-color: #d68101
+
+#user 
+  float: right
+  margin-top: 10px
+  margin-left: 20px
+
+#user p 
+  float: left
+  margin-right: 10px
+  line-height: 50px
+
+#user img 
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  width: 50px
+  height: 50px
+
+
+#main 
+  width: 100%
+  padding: 0 30px 0 100px
+  position: relative
+  margin: 20px 0
+
+
+#side-menu
+  width: 60px
+  position: absolute
+  left: 20px
+  z-index: 1
+
+#side-menu>ul 
+  list-style: none
+  margin: 0
+
+#side-menu>ul>li 
+  position: relative
+  text-align: center
+  border: 2px solid #d68101
+  padding: 15px 0
+  background: #BAFF80
+  cursor: pointer
+  color: #751
+  width: 70px
+  height: 70px
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+
+
+#side-menu>ul>li.active 
+  background: #fff
+  color: $mainColor
+
+#side-menu p 
+  margin: 0
+  font-weight: bold
+
+#side-menu a 
+  color: inherit
+
+
+.sub-menu
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  margin: 0
+  list-style: none
+
+.sub-menu.open 
+  display: block
+
+.sub-menu li 
+  position: relative
+  width: 70px
+  height: 70px
+
+
+#container
+  width: 100%
+  position: relative
+  min-height: 500px
+  background: #fff
+  -webkit-border-radius: 10px
+  -moz-border-radius: 10px
+  border-radius: 10px
+  border: 2px solid #d68101
+
+#content 
+  width: 100%
+  padding-left: 200px
+
+#content::after 
+  content: ''
+  clear: both
+  display: block
+
+#content.full-fill 
+  padding-left: 0px
+
+
+#sub-menu
+  width: 200px
+  left: 0
+  top: 0
+  bottom: 0
+  border-right: 1px solid #ddd
+
+#sub-menu ul 
+  margin: 60px 0 0 2px
+  list-style: none
+
+#sub-menu ul li 
+  padding: 10px 30px
+  border-bottom: 1px solid #ddd
+  cursor: pointer
+  text-align: center
+
+#sub-menu ul li.active 
+  border-right: 4px solid $mainColor
+  color: $mainColor
+  background: #E9E7E1
+
+#sub-menu ul li:hover 
+  border-right: 4px solid $mainColor
+  color: $mainColor
+  background: #E9E7E1
+

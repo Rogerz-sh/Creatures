@@ -1,0 +1,165 @@
+header {
+    position: relative;
+
+}
+/*导航栏*/
+nav {
+    float: left;
+}
+nav ul {
+    float: left;
+    margin: 0;
+    list-style: none;
+    line-height: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+nav ul li {
+    float: left;
+}
+nav ul li.active {
+    background-color: #ee6611;
+}
+nav ul li:not(.active):hover {
+    background-color: rgba(238, 102, 17, .5);
+}
+nav a {
+    color: #fff;
+    padding: 0 20px;
+}
+nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*背景样式*/
+.header.bg {
+    background-color: #ffaa22;
+    color: #fff;
+}
+
+/*LOGO*/
+.logo {
+    float: left;
+    margin: 5px 20px 5px 0px;
+}
+.logo img {
+    float: left;
+}
+.logo-text {
+    line-height: 40px;
+    font-size: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+/*右侧菜单*/
+.quick-menu {
+    float: right;
+    text-align: right;
+    font-size: 12px;
+}
+.quick-menu ul {
+    float: left;
+    line-height: 50px;
+    list-style: none;
+    margin: 0;
+}
+.quick-menu ul li {
+    float: left;
+}
+.quick-menu a {
+    padding: 0 5px;
+    color: #fff;
+}
+.quick-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.quick-menu a:hover {
+    color: rgb(238, 102, 17);
+}
+
+/*slider样式*/
+.slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #d5d5d5;
+    overflow: hidden;
+    min-width: 980px;
+}
+.slider:after {
+    content: '';
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+/*slider图片*/
+.slider-main {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    transition: top .3s linear;
+}
+.slider-main li {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+/*slider按钮*/
+.slider-btn {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.slider-btn a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, .3);
+    margin: 0 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.slider-btn a.active {
+    background: rgba(255, 255, 255, .8);
+}
+
+/*浮动图层*/
+.absolute-toolkit {
+    width: 100%;
+    height: 0px;
+    min-width: 980px;
+    position: relative;
+}
+.absolute-right {
+    width: 240px;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: -360px;
+    right: 20px;
+}
+.absolute-right img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 20px;
+}
+.toolkit-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 220px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background: #fa2;
+}

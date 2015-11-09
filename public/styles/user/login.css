@@ -1,0 +1,54 @@
+.logo {
+    margin-top: 30px;
+}
+
+.content {
+    position: relative;
+    margin-top: 60px;
+}
+
+.login-box {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 2px solid #ccc;
+    border-top-color: #fa2;
+    float: right;
+    margin-right: 60px;
+    padding: 30px;
+    width: 250px;
+}
+
+.tab-group {
+
+}
+
+.tabs {
+    float: left;
+    clear: both;
+}
+
+.tab {
+    float: left;
+    padding: 7px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+.tab.size-md {
+    width: 125px;
+}
+.tab.active {
+    border-bottom-color: #fa2;
+}
+
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.tab-content .form-group {
+    margin-top: 20px;
+}
+

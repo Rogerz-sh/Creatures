@@ -1,0 +1,152 @@
+@extends('layout.enterprise')
+@section('content')
+    <div id="container">
+        <div id="sub-menu">
+            <ul>
+                <li class="active">招聘中职位</li>
+                <li>草拟职位</li>
+                <li>保密职位</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-xs-offset-0 margin-top-20">
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <table class="table margin-top-20">
+                            <thead>
+                            <tr>
+                                <th>职位名称</th>
+                                <th>年薪</th>
+                                <th>工作地点</th>
+                                <th>招聘人数</th>
+                                <th>状态</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            <tr>
+                                <td>销售总监</td>
+                                <td>40万</td>
+                                <td>上海</td>
+                                <td>1人</td>
+                                <td>招聘中</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+@stop
