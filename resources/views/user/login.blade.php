@@ -4,12 +4,8 @@
     <link rel="stylesheet" href="/styles/user/login.css">
 @stop
 @section('content')
-    <div class="wrap">
-        <div class="logo">
-            <img src="/images/logo.png" height="40" />
-            <span class="logo-text">Laravel</span>
-        </div>
-        <div class="content">
+    <div class="wrap pos-rel full-height">
+        <div class="content bg-white">
             <div class="login-box">
                 <div class="tab-group">
                     <div class="tabs">
@@ -41,7 +37,7 @@
                                     <span class="font-sm float-right">快速注册</span>
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn col-xs-12 btn-warning" id="submit">登录</button>
+                                    <button class="btn col-xs-12 bg-main white" id="submit">登录</button>
                                 </div>
                             </form>
                         </div>
@@ -50,5 +46,6 @@
             </div>
         </div>
     </div>
+    <div class="pos-abs full-width half-height bottom bg-main z-bottom"></div>
     <script src="/scripts/user/login.js"></script>
 @stop

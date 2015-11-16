@@ -1,4 +1,4 @@
-$mainColor: #173E75
+@import "core.sass"
 
 //  Elements
 *
@@ -9,24 +9,23 @@ html, body
   padding: 0
   height: 100%
   font-family: Consolas
+ul
+  margin: 0
+  list-style: none
 
 
 //  Container
 .wrap
-  width: 980px
+  width: $wMain
   margin: 0 auto
-
-.wrap:after 
-  display: table
-  content: ''
-  clear: both
-
-.wrap.bg-lightgray 
-  background-color: #fefefe
+  &:after
+    content: ' '
+    display: block
+    clear: both
 
 .wrapper 
   width: 100%
-  min-width: 1240px
+  min-width: $wMain
   min-height: 100%
   position: relative
 
@@ -34,13 +33,12 @@ html, body
 //  Normal
 .float-right
   float: right
-
 .float-left 
   float: left
-
 .clear 
   clear: both
-
+.no-style
+  list-style: none
 
 //  Fonts
 .font-sm
@@ -49,16 +47,86 @@ html, body
 .bold
   font-weight: bold
 
+
+//Color & bgColor
 .white
   color: #fff
-
+  &:hover
+    color: #fff
+.red
+  color: #ee0000
+.gray
+  color: #cccccc
+.darkgray
+  color: #999999
+.main-color
+  color: $cMain
 .bg-main
-  background-color: $mainColor
+  background-color: $cMain
+.bg-background
+  background-color: #f2f2f2
+.bg-white
+  background: #ffffff
+.bg-main
+  background: $cMain
+.bg-light-main
+  background: $cLightMain
+.bg-dark-main
+  background: $cDarkMain
+.box-shadow
+  box-shadow: 1px 1px 1px #ddd
 
+
+//  Sizes
+.size-full
+  width: 100%
+.size-mini
+  width: 150px
+.size-small
+  width: 300px
+.size-medium
+  width: 600px
+.size-large
+  width: 900px
+@for $i from 1 to 15
+  .size-#{$i*10}
+    width: #{$i*10}px
+.full-size
+  width: 100%
+  height: 100%
+.full-height
+  height: 100%
+.full-width
+  width: 100%
+.half-height
+  height: 50%
+.half-width
+  width: 50%
 
 //  Positions
+.pos-rel
+  position: relative
+.pos-abs
+  position: absolute
+.left
+  left: 0
+.right
+  rigth: 0
+.top
+  top: 0
+.bottom
+  bottom: 0
+.z-top
+  z-index: 9999
+.z-bottom
+  z-index: -1
+
 .no-padding
   padding: 0
+.no-padding-left
+  padding-left: 0
+.no-padding-right
+  padding-right: 0
 
 $dirList: left, right, top, bottom
 @for $i from 1 through 10
@@ -67,17 +135,45 @@ $dirList: left, right, top, bottom
   @each $dir in $dirList
     .padding-#{$dir}-#{$i*5}
       padding-#{$dir}: #{$i*5}px
+    .margin-#{$dir}-#{$i*5}
+      margin-#{$dir}: #{$i*5}px
+  .line-height-#{$i}
+    line-height: #{1 + $i/10}em
 
 
+//Checkbox & Radio
+input[type=checkbox], input[type=radio]
+  position: absolute
+  left: -9999px
+  opacity: 0
+  &+.text
+    position: relative
+    display: inline-block
+  &+.text:before
+    content: ''
+    display: inline-block
+    width: 18px
+    height: 18px
+    padding: 2px
+    border: 1px solid #999
+    vertical-align: top
+    margin-right: 5px
+input[type=checkbox]
+  &:checked+.text:before
+    content: '\f00c'
+    font-family: FontAwesome
+    color: $cMain
+    line-height: .9em
+input[type=radio]
+  &+.text:before
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    -ms-border-radius: 50%
+    border-radius: 50%
+  &:checked+.text:before
+    background: $cMain
+    background-clip: content-box
 
-//.padding-5
-//  adding: 5px
-//.padding-10
-//  padding: 10px
-//.padding-15
-//  padding: 15px
-//.no-margin
-//  margin: 0
-//
-//.margin-top-20
-//  margin-top: 20px
+//Fixes to bootstarp.min.css
+.form-group label
+  font-weight: normal

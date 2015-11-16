@@ -1,9 +1,8 @@
-$mainColor: #173E75
+@import "core.sass"
 
-
-
+//Header
 #header 
-  padding: 0 30px
+  //padding: 0 30px
 
 #user-menu 
   float: left
@@ -17,18 +16,18 @@ $mainColor: #173E75
   -webkit-border-radius: 50%
   -moz-border-radius: 50%
   border-radius: 50%
-  border: 1px solid #fff
+  //border: 1px solid $cWhite
   text-align: center
-  line-height: 30px
-  background: #fff
-  color: $mainColor
+  line-height: 32px
+  background: $cWhite
+  color: $cMain
   margin: 0 10px
   cursor: pointer
 
 #user-menu li:hover 
-  background: #d68101
-  color: #fff
-  border-color: #d68101
+  //background: $cDarkMain
+  color: $cDarkMain
+  //border-color: #d68101
 
 #user 
   float: right
@@ -48,114 +47,91 @@ $mainColor: #173E75
   height: 50px
 
 
-#main 
-  width: 100%
-  padding: 0 30px 0 100px
-  position: relative
-  margin: 20px 0
+//Nav
+#nav
+  background: $cDarkMain
 
-
-#side-menu
-  width: 60px
-  position: absolute
-  left: 20px
-  z-index: 1
-
-#side-menu>ul 
+.nav-list
+  margin: 0
   list-style: none
-  margin: 0
+  color: $cWhite
 
-#side-menu>ul>li 
+.nav-list>li
+  float: left
+  display: inline-block
   position: relative
-  text-align: center
-  border: 2px solid #d68101
-  padding: 15px 0
-  background: #BAFF80
+  z-index: 11
+  padding: 10px 20px
+  border-left: get-border(1, $cMain)
   cursor: pointer
-  color: #751
-  width: 70px
-  height: 70px
-  -webkit-border-radius: 50%
-  -moz-border-radius: 50%
-  border-radius: 50%
+  &:last-child
+    border-right: get-border(1, $cMain)
+  &.active
+    background: $cLightMain
+    border: none
+  &>a
+    color: $cWhite
+    text-decoration: none
+  &:hover
+    background: $cMain
 
 
-#side-menu>ul>li.active 
-  background: #fff
-  color: $mainColor
-
-#side-menu p 
-  margin: 0
-  font-weight: bold
-
-#side-menu a 
-  color: inherit
-
-
-.sub-menu
+.sub-nav
   display: none
   position: absolute
-  top: 0
-  left: 0
+  z-index: 11
+  list-style: none
   margin: 0
-  list-style: none
-
-.sub-menu.open 
-  display: block
-
-.sub-menu li 
-  position: relative
-  width: 70px
-  height: 70px
-
-
-#container
-  width: 100%
-  position: relative
-  min-height: 500px
-  background: #fff
-  -webkit-border-radius: 10px
-  -moz-border-radius: 10px
-  border-radius: 10px
-  border: 2px solid #d68101
-
-#content 
-  width: 100%
-  padding-left: 200px
-
-#content::after 
-  content: ''
-  clear: both
-  display: block
-
-#content.full-fill 
-  padding-left: 0px
-
-
-#sub-menu
-  width: 200px
   left: 0
+  //top: 0px
+  background: $cDarkMain
+  li
+    padding: 10px 20px
+    &:hover
+      background: $cMain
+    &>a
+      color: $cWhite
+
+
+//  Layouts
+#side-bar
+  //display: inline-block
+  float: left
+  width: 210px
+  position: relative
   top: 0
-  bottom: 0
-  border-right: 1px solid #ddd
+  left: 0
 
-#sub-menu ul 
-  margin: 60px 0 0 2px
-  list-style: none
+#main
+  width: 760px
+  float: right
+  //display: inline-block
+  position: relative
+  top: 0
+  right: 0
 
-#sub-menu ul li 
-  padding: 10px 30px
-  border-bottom: 1px solid #ddd
-  cursor: pointer
-  text-align: center
+.tabs
+  .tab-title
+    ul
+      list-style: none
+      margin: 0
+      border-bottom: get-border(3, #999)
+      padding: 0 10px
+      li
+        //float: left
+        display: inline-block
+        padding: 10px 20px
+        border-bottom: get-border(3, #999)
+        font-size: 1.1em
+        margin-bottom: -3px
+        cursor: pointer
+        &.active
+          border-color: $cMain
+  .tab-content
+    padding: 10px 0
 
-#sub-menu ul li.active 
-  border-right: 4px solid $mainColor
-  color: $mainColor
-  background: #E9E7E1
-
-#sub-menu ul li:hover 
-  border-right: 4px solid $mainColor
-  color: $mainColor
-  background: #E9E7E1
-
+.box
+  width: 100%
+  &.bordered
+    border: get-border(1, #ddd)
+    border-radius: 5px

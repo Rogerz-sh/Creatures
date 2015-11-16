@@ -31,7 +31,7 @@
             <div class="quick-menu">
                 <ul>
                     <li><a href="/">职场问答</a>|</li>
-                    <li><a href="/">企业客户</a>|</li>
+                    <li><a href="/user/login">企业客户</a>|</li>
                     <li><a href="/">人才客户</a></li>
                 </ul>
             </div>

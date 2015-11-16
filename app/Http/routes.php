@@ -36,5 +36,10 @@ Route::group(['prefix' => 'account'], function () {
 //    Route::get('/', ['uses' => 'EnterpriseController@index']);
 //    Route::get('/getMenu', 'EnterpriseController@getMenu');
 //});
+Route::group(['middleware' => 'login'], function () {
 
-Route::controller('enterprise', 'EnterpriseController');
+    Route::controller('enterprise', 'EnterpriseController');
+
+    Route::controller('job', 'JobController', ['middleware' => 'Auth']);
+
+});

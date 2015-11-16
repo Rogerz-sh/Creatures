@@ -1,150 +1,38 @@
-#header {
-  padding: 0 30px; }
+#user-menu { float: left; list-style: none; margin-top: 20px; }
 
-#user-menu {
-  float: left;
-  list-style: none;
-  margin-top: 20px; }
+#user-menu li { float: left; width: 30px; height: 30px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; text-align: center; line-height: 32px; background: #FFFFFF; color: #173E75; margin: 0 10px; cursor: pointer; }
 
-#user-menu li {
-  float: left;
-  width: 30px;
-  height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  text-align: center;
-  line-height: 30px;
-  background: #fff;
-  color: #173E75;
-  margin: 0 10px;
-  cursor: pointer; }
+#user-menu li:hover { color: #0A2C5D; }
 
-#user-menu li:hover {
-  background: #d68101;
-  color: #fff;
-  border-color: #d68101; }
+#user { float: right; margin-top: 10px; margin-left: 20px; }
 
-#user {
-  float: right;
-  margin-top: 10px;
-  margin-left: 20px; }
+#user p { float: left; margin-right: 10px; line-height: 50px; }
 
-#user p {
-  float: left;
-  margin-right: 10px;
-  line-height: 50px; }
+#user img { -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; width: 50px; height: 50px; }
 
-#user img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px; }
+#nav { background: #0A2C5D; }
 
-#main {
-  width: 100%;
-  padding: 0 30px 0 100px;
-  position: relative;
-  margin: 20px 0; }
+.nav-list { margin: 0; list-style: none; color: #FFFFFF; }
 
-#side-menu {
-  width: 60px;
-  position: absolute;
-  left: 20px;
-  z-index: 1; }
+.nav-list > li { float: left; display: inline-block; position: relative; z-index: 11; padding: 10px 20px; border-left: 1px solid #173E75; cursor: pointer; }
+.nav-list > li:last-child { border-right: 1px solid #173E75; }
+.nav-list > li.active { background: #0755C3; border: none; }
+.nav-list > li > a { color: #FFFFFF; text-decoration: none; }
+.nav-list > li:hover { background: #173E75; }
 
-#side-menu > ul {
-  list-style: none;
-  margin: 0; }
+.sub-nav { display: none; position: absolute; z-index: 11; list-style: none; margin: 0; left: 0; background: #0A2C5D; }
+.sub-nav li { padding: 10px 20px; }
+.sub-nav li:hover { background: #173E75; }
+.sub-nav li > a { color: #FFFFFF; }
 
-#side-menu > ul > li {
-  position: relative;
-  text-align: center;
-  border: 2px solid #d68101;
-  padding: 15px 0;
-  background: #BAFF80;
-  cursor: pointer;
-  color: #751;
-  width: 70px;
-  height: 70px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
+#side-bar { float: left; width: 210px; position: relative; top: 0; left: 0; }
 
-#side-menu > ul > li.active {
-  background: #fff;
-  color: #173E75; }
+#main { width: 760px; float: right; position: relative; top: 0; right: 0; }
 
-#side-menu p {
-  margin: 0;
-  font-weight: bold; }
+.tabs .tab-title ul { list-style: none; margin: 0; border-bottom: 3px solid #999; padding: 0 10px; }
+.tabs .tab-title ul li { display: inline-block; padding: 10px 20px; border-bottom: 3px solid #999; font-size: 1.1em; margin-bottom: -3px; cursor: pointer; }
+.tabs .tab-title ul li.active { border-color: #173E75; }
+.tabs .tab-content { padding: 10px 0; }
 
-#side-menu a {
-  color: inherit; }
-
-.sub-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  list-style: none; }
-
-.sub-menu.open {
-  display: block; }
-
-.sub-menu li {
-  position: relative;
-  width: 70px;
-  height: 70px; }
-
-#container {
-  width: 100%;
-  position: relative;
-  min-height: 500px;
-  background: #fff;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border: 2px solid #d68101; }
-
-#content {
-  width: 100%;
-  padding-left: 200px; }
-
-#content::after {
-  content: "";
-  clear: both;
-  display: block; }
-
-#content.full-fill {
-  padding-left: 0px; }
-
-#sub-menu {
-  width: 200px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  border-right: 1px solid #ddd; }
-
-#sub-menu ul {
-  margin: 60px 0 0 2px;
-  list-style: none; }
-
-#sub-menu ul li {
-  padding: 10px 30px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-  text-align: center; }
-
-#sub-menu ul li.active {
-  border-right: 4px solid #173E75;
-  color: #173E75;
-  background: #E9E7E1; }
-
-#sub-menu ul li:hover {
-  border-right: 4px solid #173E75;
-  color: #173E75;
-  background: #E9E7E1; }
+.box { width: 100%; }
+.box.bordered { border: 1px solid #ddd; border-radius: 5px; }

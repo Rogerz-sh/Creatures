@@ -8,24 +8,13 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\View;
 
-class Menu extends Model {
-    public $timestamps = false;
-}
+
 
 class EnterpriseController extends BaseController {
+
     public function getIndex () {
-        Session::set('menus', Menu::all());
-        return view('enterprise.index', ['url' => '/']);
-    }
-
-    public function getJob () {
-        return view('enterprise.job', ['url' => '/job']);
-    }
-
-    public function getMenu () {
-        return Menu::all();
+        return view('enterprise.index')->with('navIndex', 0);
     }
 }
