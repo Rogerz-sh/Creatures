@@ -4,5 +4,13 @@ $cLightMain: #0755C3
 $cWhite: #FFFFFF
 $wMain: 980px
 
+$colors: (background: #f2f2f2, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, gray: #cccccc, dark-gray: #999999)
+
 @function get-border($bw, $c)
   @return #{$bw}px solid #{$c}
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius

@@ -10,6 +10,7 @@ $submenus = $navData['submenus'];
 <html>
 <head>
     <title>@yield('title')</title>
+    <meta name="_token" content="{{csrf_token()}}">
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/kendo.common-bootstrap.min.css">
@@ -40,7 +41,7 @@ $submenus = $navData['submenus'];
                     <li title="我的帐户"><i class="fa fa-user"></i></li>
                     <li title="我的消息"><i class="fa fa-envelope"></i></li>
                     <li title="我的钱包"><i class="fa fa-money"></i></li>
-                    <li title="系统设置"><i class="fa fa-cog"></i></li>
+                    <li title="系统设置"><a href="/account/logout"><i class="fa fa-cog"></i></a></li>
                 </ul>
                 <div id="user">
                     <p class="white bold">{{ $name }}</p>

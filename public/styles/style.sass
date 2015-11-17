@@ -49,30 +49,15 @@ ul
 
 
 //Color & bgColor
-.white
-  color: #fff
-  &:hover
-    color: #fff
-.red
-  color: #ee0000
-.gray
-  color: #cccccc
-.darkgray
-  color: #999999
-.main-color
-  color: $cMain
-.bg-main
-  background-color: $cMain
-.bg-background
-  background-color: #f2f2f2
-.bg-white
-  background: #ffffff
-.bg-main
-  background: $cMain
-.bg-light-main
-  background: $cLightMain
-.bg-dark-main
-  background: $cDarkMain
+@each $name, $color in $colors
+  .#{$name}
+    color: $color
+    &:hover
+      color: $color
+  .bg-#{$name}
+    background-color: $color
+  .border-#{$name}
+    border-color: $color
 .box-shadow
   box-shadow: 1px 1px 1px #ddd
 
@@ -108,6 +93,8 @@ ul
   position: relative
 .pos-abs
   position: absolute
+.pos-fix
+  position: fixed
 .left
   left: 0
 .right
@@ -129,10 +116,12 @@ ul
   padding-right: 0
 
 $dirList: left, right, top, bottom
-@for $i from 1 through 10
+@for $i from 1 through 20
   .padding-#{$i*5}
     padding: #{$i*5}px
   @each $dir in $dirList
+    .#{$dir}-#{$i*10}
+      #{$dir}: #{$i*10}px
     .padding-#{$dir}-#{$i*5}
       padding-#{$dir}: #{$i*5}px
     .margin-#{$dir}-#{$i*5}
@@ -166,10 +155,7 @@ input[type=checkbox]
     line-height: .9em
 input[type=radio]
   &+.text:before
-    -webkit-border-radius: 50%
-    -moz-border-radius: 50%
-    -ms-border-radius: 50%
-    border-radius: 50%
+    +border-radius(50%)
   &:checked+.text:before
     background: $cMain
     background-clip: content-box
@@ -177,3 +163,14 @@ input[type=radio]
 //Fixes to bootstarp.min.css
 .form-group label
   font-weight: normal
+.modal
+  width: 600px
+  margin: 0 auto
+  &.modal-sm
+    width: 300px
+  &.modal-lg
+    width: 900px
+  .modal-dialog
+    width: 100%
+  .modal-footer
+    text-align: left

@@ -16,26 +16,23 @@ Route::get('/', function () {
     return view('site.index');
 });
 
-Route::group(['prefix' => 'user'], function () {
-
-    Route::get('/', function () {
-        return view('user.index');
-    });
-
-    Route::get('login', 'UserController@login');
-
-    Route::get('{id}', 'UserController@index');
-
-});
-
-Route::group(['prefix' => 'account'], function () {
-    Route::get('login', 'AccountController@login');
-});
-
-//Route::group(['prefix' => 'enterprise'], function () {
-//    Route::get('/', ['uses' => 'EnterpriseController@index']);
-//    Route::get('/getMenu', 'EnterpriseController@getMenu');
+//Route::group(['prefix' => 'user'], function () {
+//
+//    Route::get('/', function () {
+//        return view('user.index');
+//    });
+//
+//    Route::get('login', 'UserController@login');
+//
+//    Route::get('{id}', 'UserController@index');
+//
 //});
+
+Route::controller('user', 'UserController');
+
+Route::controller('account', 'AccountController');
+
+
 Route::group(['middleware' => 'login'], function () {
 
     Route::controller('enterprise', 'EnterpriseController');

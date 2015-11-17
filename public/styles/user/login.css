@@ -2,7 +2,7 @@
 
 .content { position: absolute; top: 60px; right: 60px; }
 
-.login-box { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; border: 2px solid #ccc; border-top-color: #173E75; float: right; padding: 30px; width: 250px; }
+.login-box { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; border: 2px solid #ffffff; border-top-color: #173E75; float: right; padding: 30px; width: 250px; }
 
 .tabs { float: left; clear: both; }
 

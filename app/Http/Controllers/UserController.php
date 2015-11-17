@@ -9,11 +9,19 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller {
-    public function index () {
+    public function getIndex () {
         return view('user.index');
     }
 
-    public function login () {
+    public function getLogin () {
         return view('user.login');
+    }
+
+    public function getRegister () {
+        return view('user.register');
+    }
+
+    public function anyForget () {
+        return redirect('/user/login');
     }
 }

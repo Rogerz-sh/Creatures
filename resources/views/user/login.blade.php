@@ -5,6 +5,7 @@
 @stop
 @section('content')
     <div class="wrap pos-rel full-height">
+        <h1 class="pos-abs margin-top-100">新猎夫 <small>您身边的招聘专家</small></h1>
         <div class="content bg-white">
             <div class="login-box">
                 <div class="tab-group">
@@ -19,7 +20,7 @@
                     </div>
                     <div class="tab-content active" id="login">
                         <div class="col-xs-12">
-                            <form class="form form-horizontal" action="/account/login" onsubmit="return false">
+                            <form id="form" class="form form-horizontal" action="/account/login" onsubmit="return false">
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -33,8 +34,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <span class="font-sm">忘记密码？</span>
-                                    <span class="font-sm float-right">快速注册</span>
+                                    <span class="font-sm"><a href="/user/forget">忘记密码？</a></span>
+                                    <span class="font-sm float-right"><a href="/user/register">快速注册</a></span>
                                 </div>
                                 <div class="form-group">
                                     <button class="btn col-xs-12 bg-main white" id="submit">登录</button>
@@ -46,6 +47,6 @@
             </div>
         </div>
     </div>
-    <div class="pos-abs full-width half-height bottom bg-main z-bottom"></div>
+    <div class="pos-abs full-width bottom top-200 bg-main z-bottom"></div>
     <script src="/scripts/user/login.js"></script>
 @stop

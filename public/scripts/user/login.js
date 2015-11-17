@@ -9,7 +9,38 @@ $(function () {
         $('#' + target).addClass('active');
     });
 
+    $('#form').$form({
+        controls: [
+            {
+                name: 'name',
+                target: '#name',
+                type: 'input',
+                rules: [
+                    {rule: 'required', errMsg: '用户名不能为空'}
+                ]
+            },
+            {
+                name: 'password',
+                target: '#password',
+                type: 'input',
+                rules: [
+                    {rule: 'required', errMsg: '密码不能为空'}
+                ]
+            }
+        ]
+    });
+
     $('#submit').click(function () {
-        location.href = '/account/login?name=' + $('#name').val();
+        var form = $('#form').data('form');
+        if (form.validate()) {
+            var data = form.getFormData();
+            $.$ajax.post('/account/login', data, function (res) {
+                if (res.status) {
+                    location.href = '/enterprise';
+                } else {
+                    $.$modal.alert(res.err_msg)
+                }
+            });
+        }
     });
 });
