@@ -16,6 +16,7 @@ class LoginCheck
      */
     public function handle($request, Closure $next)
     {
+//        echo Session::get('name');
         if (Session::get('name')) {
             return $next($request);
 

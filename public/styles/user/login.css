@@ -1,6 +1,6 @@
 .logo { margin-top: 30px; }
 
-.content { position: absolute; top: 60px; right: 60px; }
+.content { position: absolute; top: 100px; right: 60px; }
 
 .login-box { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; border: 2px solid #ffffff; border-top-color: #173E75; float: right; padding: 30px; width: 250px; }
 

@@ -45,16 +45,23 @@ class AccountController extends BaseController {
             $ret['status'] = 0;
             $ret['err_code'] = 'params missed';
             $ret['err_msg'] = '参数缺失';
-            return response($ret);
         } else {
-            $en = new Enterprise();
-            $en->en_uid = Enterprise::all()->count() + 10000 + 1;
-            $en->en_name = $name;
-            $en->en_email = $email;
-            $en->en_password = md5($password);
-            $en->save();
-            return response($ret);
+            $count = Enterprise::where('en_email', '=', $email)->count();
+
+            if ($count === 0) {
+                $en = new Enterprise();
+                $en->en_uid = Enterprise::all()->count() + 10000 + 1;
+                $en->en_name = $name;
+                $en->en_email = $email;
+                $en->en_password = md5($password);
+                $en->save();
+            } else {
+                $ret['status'] = 0;
+                $ret['err_code'] = 'email exist';
+                $ret['err_msg'] = '邮箱已经被注册';
+            }
         }
+        return response($ret);
     }
 }
 

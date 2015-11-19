@@ -2,6 +2,11 @@
 @section('title', '用户登录')
 @section('page-head')
     <link rel="stylesheet" href="/styles/user/login.css">
+    <style>
+        .wrap+div {
+            top: 250px;
+        }
+    </style>
 @stop
 @section('content')
     <div class="wrap pos-rel full-height">

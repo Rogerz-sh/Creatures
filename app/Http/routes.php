@@ -37,6 +37,6 @@ Route::group(['middleware' => 'login'], function () {
 
     Route::controller('enterprise', 'EnterpriseController');
 
-    Route::controller('job', 'JobController', ['middleware' => 'Auth']);
+    Route::controller('job', 'JobController');
 
 });
