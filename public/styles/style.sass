@@ -12,6 +12,8 @@ html, body
 ul
   margin: 0
   list-style: none
+label
+  font-weight: normal
 
 
 //  Container
@@ -22,6 +24,8 @@ ul
     content: ' '
     display: block
     clear: both
+  &.clear-padding
+    width: $wMain + 30
 
 .wrapper 
   width: 100%
@@ -39,6 +43,16 @@ ul
   clear: both
 .no-style
   list-style: none
+.hide
+  display: none
+.inline-block
+  display: inline-block
+.v-bottom
+  vertical-align: bottom
+.v-top
+  vertical-align: top
+.v-middle
+  vertical-align: middle
 
 //  Fonts
 .font-sm
@@ -54,6 +68,11 @@ ul
     color: $color
     &:hover
       color: $color
+    span.text
+      color: $color !important
+      border-color: $color !important
+    span.text:before
+      color: $color !important
   .bg-#{$name}
     background-color: $color
   .border-#{$name}
@@ -116,7 +135,7 @@ ul
   padding-right: 0
 
 $dirList: left, right, top, bottom
-@for $i from 1 through 20
+@for $i from 1 through 40
   .padding-#{$i*5}
     padding: #{$i*5}px
   @each $dir in $dirList

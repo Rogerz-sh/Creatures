@@ -39,4 +39,10 @@ Route::group(['middleware' => 'login'], function () {
 
     Route::controller('job', 'JobController');
 
+    Route::controller('resume', 'ResumeController');
+
+    Route::controller('meeting', 'MeetingController');
+
+    Route::controller('search', 'SearchController');
+
 });

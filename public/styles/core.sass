@@ -4,7 +4,7 @@ $cLightMain: #0755C3
 $cWhite: #FFFFFF
 $wMain: 980px
 
-$colors: (background: #f2f2f2, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, gray: #cccccc, dark-gray: #999999)
+$colors: (background: #f2f2f2, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, gray: #cccccc, dark-gray: #999999, green: #009900, light-green: #00bb00, orange: #ed7721)
 
 @function get-border($bw, $c)
   @return #{$bw}px solid #{$c}
@@ -14,3 +14,9 @@ $colors: (background: #f2f2f2, white:#ffffff, main: #173e75, dark-main: #0a2c5d,
   -moz-border-radius: $radius
   -ms-border-radius: $radius
   border-radius: $radius
+
+=box-shadow($value)
+  -webkit-box-shadow: $value
+  -moz-box-shadow: $value
+  -ms-box-shadow: $value
+  box-shadow: $value

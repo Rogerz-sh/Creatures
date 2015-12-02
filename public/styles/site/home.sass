@@ -1,0 +1,228 @@
+@import "../core.sass"
+
+header
+  position: fixed
+  width: 100%
+  height: 60px
+  top: 0
+  z-index: 999
+  background-color: rgba(255,255,255,.9)
+
+/*LOGO*/
+.logo
+  position: fixed
+  margin: 5px 0 0 0
+  height: 115px
+  width: 115px
+  background-color: #fff
+  z-index: 999
+  box-shadow: 1px 1px 5px #333, -1px -1px 5px #333
+  text-align: center
+
+.logo img
+  //float: left
+  vertical-align: bottom
+
+.logo-text
+  line-height: 1em
+  font-size: 20px
+  //float: left
+  //margin-left: 10px
+  font-weight: bold
+  margin-top: 10px
+  small
+    display: block
+    letter-spacing: 3px
+    font-weight: bold
+    font-family: "微软雅黑"
+
+/*SideMenu*/
+.quick-menu
+  float: right
+  text-align: right
+  font-size: 12px
+  margin-top: 8px
+  ul
+    float: right
+    line-height: 20px
+    list-style: none
+    margin: 0
+    li
+      float: left
+  a
+    padding: 0 5px
+    color: $cMain
+    text-decoration: none
+  a:hover
+    color: rgb(238, 102, 17)
+  img
+    vertical-align: text-bottom
+  strong
+    font-size: 1.5em
+    font-weight: bold
+
+/*Nav*/
+nav
+  background: rgba(0,0,0,.9)
+  position: fixed
+  width: 100%
+  top: 60px
+  z-index: 99
+
+nav ul
+  float: left
+  margin: 0 0 0 150px
+  list-style: none
+  line-height: 50px
+  font-weight: bold
+
+nav ul li
+  float: left
+
+nav ul li.active
+  background-color: #999
+
+nav ul li:not(.active):hover
+  background-color: #666
+
+nav a
+  color: #fff
+  padding: 0 20px
+
+nav a:hover
+  color: #fff
+  text-decoration: none
+
+
+/*Background*/
+.header.bg
+  background-color: #ffaa22
+  color: #fff
+
+
+
+
+/*Slider*/
+.slider
+  width: 100%
+  height: 400px
+  position: relative
+  background: #d5d5d5
+  overflow: hidden
+  min-width: 980px
+
+.slider:after
+  content: ''
+  width: 100%
+  height: 400px
+  display: block
+
+/*slider-img*/
+.slider-main
+  position: absolute
+  width: 100%
+  list-style: none
+  margin: 0
+  padding: 0
+  top: 0px
+  transition: top .3s linear
+
+.slider-main li
+  position: relative
+  width: 100%
+  height: 400px
+
+/*slider-btn*/
+.slider-btn
+  position: absolute
+  bottom: 30px
+  width: 100%
+  text-align: center
+
+.slider-btn a
+  display: inline-block
+  width: 20px
+  height: 20px
+  background: rgba(255, 255, 255, .3)
+  margin: 0 5px
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+
+.slider-btn a.active
+  background: rgba(255, 255, 255, .8)
+
+
+/*Floater*/
+.absolute-toolkit
+  width: 100%
+  height: 0px
+  min-width: 980px
+  position: relative
+
+.absolute-right
+  width: 240px
+  background: rgba(0, 0, 0, .8)
+  position: absolute
+  top: -360px
+  right: 20px
+
+.absolute-right img
+  width: 200px
+  height: 200px
+  margin: 10px 20px
+
+.toolkit-button
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  width: 220px
+  padding: 10px
+  margin: 10px
+  text-align: center
+  background: #fa2
+
+.slide-list
+  position: relative
+  &:after
+    display: block
+    content: ''
+    clear: both
+  .arrow
+    position: absolute
+    width: 50px
+    height: 200px
+    background: rgba(0, 0, 0, 0.1)
+    &.arrow-left
+      left: 0
+    &.arrow-right
+      right: 0
+  .slide-content
+    position: absolute
+    width: 100%
+    padding: 0 50px
+
+#data-list
+  position: relative
+  padding-right: 200px
+  height: 200px
+#data-update
+  position: absolute
+  right: 0
+  top: 0
+  width: 200px
+  min-height: 200px
+  height: 100%
+  text-align: center
+  font-size: 2em
+  font-weight: bold
+  background: #1F459A
+  color: #fff
+  display: table
+  div
+    display: table-cell
+    height: 100%
+    vertical-align: middle

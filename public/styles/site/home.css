@@ -1,165 +1,75 @@
-header {
-    position: relative;
+@charset "UTF-8";
+header { position: fixed; width: 100%; height: 60px; top: 0; z-index: 999; background-color: rgba(255, 255, 255, 0.9); }
 
-}
-/*导航栏*/
-nav {
-    float: left;
-}
-nav ul {
-    float: left;
-    margin: 0;
-    list-style: none;
-    line-height: 50px;
-    font-weight: bold;
-    color: #fff;
-}
-nav ul li {
-    float: left;
-}
-nav ul li.active {
-    background-color: #ee6611;
-}
-nav ul li:not(.active):hover {
-    background-color: rgba(238, 102, 17, .5);
-}
-nav a {
-    color: #fff;
-    padding: 0 20px;
-}
-nav a:hover {
-    color: #fff;
-    text-decoration: none;
-}
+/*LOGO */
+.logo { position: fixed; margin: 5px 0 0 0; height: 115px; width: 115px; background-color: #fff; z-index: 999; box-shadow: 1px 1px 5px #333, -1px -1px 5px #333; text-align: center; }
 
-/*背景样式*/
-.header.bg {
-    background-color: #ffaa22;
-    color: #fff;
-}
+.logo img { vertical-align: bottom; }
 
-/*LOGO*/
-.logo {
-    float: left;
-    margin: 5px 20px 5px 0px;
-}
-.logo img {
-    float: left;
-}
-.logo-text {
-    line-height: 40px;
-    font-size: 20px;
-    float: left;
-    margin-left: 10px;
-}
+.logo-text { line-height: 1em; font-size: 20px; font-weight: bold; margin-top: 10px; }
+.logo-text small { display: block; letter-spacing: 3px; font-weight: bold; font-family: "微软雅黑"; }
 
-/*右侧菜单*/
-.quick-menu {
-    float: right;
-    text-align: right;
-    font-size: 12px;
-}
-.quick-menu ul {
-    float: left;
-    line-height: 50px;
-    list-style: none;
-    margin: 0;
-}
-.quick-menu ul li {
-    float: left;
-}
-.quick-menu a {
-    padding: 0 5px;
-    color: #fff;
-}
-.quick-menu a {
-    color: #fff;
-    text-decoration: none;
-}
-.quick-menu a:hover {
-    color: rgb(238, 102, 17);
-}
+/*SideMenu */
+.quick-menu { float: right; text-align: right; font-size: 12px; margin-top: 8px; }
+.quick-menu ul { float: right; line-height: 20px; list-style: none; margin: 0; }
+.quick-menu ul li { float: left; }
+.quick-menu a { padding: 0 5px; color: #173E75; text-decoration: none; }
+.quick-menu a:hover { color: #ee6611; }
+.quick-menu img { vertical-align: text-bottom; }
+.quick-menu strong { font-size: 1.5em; font-weight: bold; }
 
-/*slider样式*/
-.slider {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    background: #d5d5d5;
-    overflow: hidden;
-    min-width: 980px;
-}
-.slider:after {
-    content: '';
-    width: 100%;
-    height: 400px;
-    display: block;
-}
-/*slider图片*/
-.slider-main {
-    position: absolute;
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    top: 0px;
-    transition: top .3s linear;
-}
-.slider-main li {
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-/*slider按钮*/
-.slider-btn {
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
-    text-align: center;
-}
-.slider-btn a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, .3);
-    margin: 0 5px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-.slider-btn a.active {
-    background: rgba(255, 255, 255, .8);
-}
+/*Nav */
+nav { background: rgba(0, 0, 0, 0.9); position: fixed; width: 100%; top: 60px; z-index: 99; }
 
-/*浮动图层*/
-.absolute-toolkit {
-    width: 100%;
-    height: 0px;
-    min-width: 980px;
-    position: relative;
-}
-.absolute-right {
-    width: 240px;
-    background: rgba(0, 0, 0, .8);
-    position: absolute;
-    top: -360px;
-    right: 20px;
-}
-.absolute-right img {
-    width: 200px;
-    height: 200px;
-    margin: 10px 20px;
-}
-.toolkit-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    width: 220px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background: #fa2;
-}
+nav ul { float: left; margin: 0 0 0 150px; list-style: none; line-height: 50px; font-weight: bold; }
+
+nav ul li { float: left; }
+
+nav ul li.active { background-color: #999; }
+
+nav ul li:not(.active):hover { background-color: #666; }
+
+nav a { color: #fff; padding: 0 20px; }
+
+nav a:hover { color: #fff; text-decoration: none; }
+
+/*Background */
+.header.bg { background-color: #ffaa22; color: #fff; }
+
+/*Slider */
+.slider { width: 100%; height: 400px; position: relative; background: #d5d5d5; overflow: hidden; min-width: 980px; }
+
+.slider:after { content: ""; width: 100%; height: 400px; display: block; }
+
+/*slider-img */
+.slider-main { position: absolute; width: 100%; list-style: none; margin: 0; padding: 0; top: 0px; transition: top 0.3s linear; }
+
+.slider-main li { position: relative; width: 100%; height: 400px; }
+
+/*slider-btn */
+.slider-btn { position: absolute; bottom: 30px; width: 100%; text-align: center; }
+
+.slider-btn a { display: inline-block; width: 20px; height: 20px; background: rgba(255, 255, 255, 0.3); margin: 0 5px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
+
+.slider-btn a.active { background: rgba(255, 255, 255, 0.8); }
+
+/*Floater */
+.absolute-toolkit { width: 100%; height: 0px; min-width: 980px; position: relative; }
+
+.absolute-right { width: 240px; background: rgba(0, 0, 0, 0.8); position: absolute; top: -360px; right: 20px; }
+
+.absolute-right img { width: 200px; height: 200px; margin: 10px 20px; }
+
+.toolkit-button { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; width: 220px; padding: 10px; margin: 10px; text-align: center; background: #fa2; }
+
+.slide-list { position: relative; }
+.slide-list:after { display: block; content: ""; clear: both; }
+.slide-list .arrow { position: absolute; width: 50px; height: 200px; background: rgba(0, 0, 0, 0.1); }
+.slide-list .arrow.arrow-left { left: 0; }
+.slide-list .arrow.arrow-right { right: 0; }
+.slide-list .slide-content { position: absolute; width: 100%; padding: 0 50px; }
+
+#data-list { position: relative; padding-right: 200px; height: 200px; }
+
+#data-update { position: absolute; right: 0; top: 0; width: 200px; min-height: 200px; height: 100%; text-align: center; font-size: 2em; font-weight: bold; background: #1F459A; color: #fff; display: table; }
+#data-update div { display: table-cell; height: 100%; vertical-align: middle; }
