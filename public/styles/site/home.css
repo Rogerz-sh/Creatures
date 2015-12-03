@@ -73,3 +73,34 @@ nav a:hover { color: #fff; text-decoration: none; }
 
 #data-update { position: absolute; right: 0; top: 0; width: 200px; min-height: 200px; height: 100%; text-align: center; font-size: 2em; font-weight: bold; background: #1F459A; color: #fff; display: table; }
 #data-update div { display: table-cell; height: 100%; vertical-align: middle; }
+
+#news-title li { width: 180px; margin-right: 20px; text-align: center; background: #cccccc; position: relative; cursor: pointer; }
+#news-title li a { color: #333; }
+#news-title li:last-child { margin-right: 0; }
+#news-title li.active { background: #173E75; color: #fff; }
+#news-title li.active a { color: #fff; }
+#news-title li.active:after { content: ""; width: 0; height: 0; border: 15px solid #173E75; border-right-color: transparent; border-left-color: transparent; border-bottom-color: transparent; position: absolute; top: 40px; left: 75px; }
+
+#news-content div { display: none; }
+#news-content div.active { display: block; }
+#news-content img { vertical-align: top; margin-top: 30px; }
+#news-content ul { margin-left: 20px; width: 400px; }
+#news-content ul li { padding: 5px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#news-content ul li:before { content: ">"; display: inline-block; margin-right: 5px; }
+#news-content ul li a { color: #333; }
+#news-content ul li a:hover { color: orange; }
+
+#career ul li { padding: 10px 0; }
+
+#contact { height: 350px; background: url("/images/contact_bg.jpg") no-repeat center/cover; background-size: cover; position: relative; }
+
+#contact-form .form-control { color: #add1f1; }
+#contact-form input.form-control { height: 40px; padding-left: 30px; }
+#contact-form textarea.form-control { height: 140px; padding-left: 30px; resize: none; }
+#contact-form button.btn { height: 40px; }
+#contact-form p { position: relative; }
+#contact-form p:before { position: absolute; font-family: FontAwesome; left: 0; display: block; width: 30px; padding-top: 9px; text-align: center; color: #add1f1; }
+#contact-form #input_user:before { content: ""; }
+#contact-form #input_email:before { content: ""; }
+#contact-form #input_phone:before { content: ""; }
+#contact-form #input_message:before { content: ""; padding-top: 5px; }

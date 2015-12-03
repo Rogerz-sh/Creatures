@@ -17,8 +17,8 @@
     <header class="header">
         <div class="wrap">
             <div class="logo">
-                <img src="/images/logo_new.jpg" height="50" />
-                <div class="logo-text">即沃咨询 <small>Giewoo</small></div>
+                <img src="/images/logo_eye.png" height="110" />
+                {{--<div class="logo-text">即沃咨询 <small>Giewoo</small></div>--}}
             </div>
             <div class="quick-menu">
                 <div class="text-left">
@@ -43,6 +43,8 @@
                 <li><a href="/">成功案例</a></li>
                 <li><a href="/">职业发展</a></li>
                 <li><a href="/">俱乐部</a></li>
+                <li><a href="/">加入我们</a></li>
+
             </ul>
         </div>
     </nav>

@@ -57,7 +57,9 @@ label
 //  Fonts
 .font-sm
   font-size: 12px
-
+@for $i from 1 through 9
+  .font-1#{$i*10}
+    font-size: #{1+$i/10}em
 .bold
   font-weight: bold
 
@@ -75,8 +77,8 @@ label
       color: $color !important
   .bg-#{$name}
     background-color: $color
-  .border-#{$name}
-    border-color: $color
+  .border-color-#{$name}
+    border-color: $color !important
 .box-shadow
   box-shadow: 1px 1px 1px #ddd
 
@@ -148,6 +150,14 @@ $dirList: left, right, top, bottom
   .line-height-#{$i}
     line-height: #{1 + $i/10}em
 
+@for $i from 1 to 10
+  .border-width-#{$i}
+    border-width: #{$i}px !important
+.border-solid
+  border: 1px solid #000
+@each $dir in $dirList
+  .border-#{$dir}
+    border-#{$dir}: 1px solid #000
 
 //Checkbox & Radio
 input[type=checkbox], input[type=radio]
