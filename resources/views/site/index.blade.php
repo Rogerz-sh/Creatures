@@ -1,5 +1,5 @@
-@extends('layout.home')
-@section('title', '首页')
+@extends('layout.header')
+@section('title', '即沃咨询 - 首页')
 @section('content')
 <div class="slider">
     <ul class="slider-main">
@@ -21,64 +21,165 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row">
-        <div class="wrap pos-rel">
-            <div id="data-list">
-                <div class="slide-list">
-                    <div class="arrow arrow-left"></div>
-                    <div class="slide-content">
-                        <table class="table">
-                            <tbody>
-                            <tr>
-                                <td>上海</td>
-                                <td>JAVA工程师</td>
-                                <td>年薪18万</td>
-                                <td>周期18天</td>
-                                <td>成功入职</td>
-                                <td>2015-11-11</td>
-                            </tr>
-                            <tr>
-                                <td>上海</td>
-                                <td>JAVA工程师</td>
-                                <td>年薪18万</td>
-                                <td>周期18天</td>
-                                <td>成功入职</td>
-                                <td>2015-11-11</td>
-                            </tr>
-                            <tr>
-                                <td>上海</td>
-                                <td>JAVA工程师</td>
-                                <td>年薪18万</td>
-                                <td>周期18天</td>
-                                <td>成功入职</td>
-                                <td>2015-11-11</td>
-                            </tr>
-                            <tr>
-                                <td>上海</td>
-                                <td>JAVA工程师</td>
-                                <td>年薪18万</td>
-                                <td>周期18天</td>
-                                <td>成功入职</td>
-                                <td>2015-11-11</td>
-                            </tr>
-                            <tr>
-                                <td>上海</td>
-                                <td>JAVA工程师</td>
-                                <td>年薪18万</td>
-                                <td>周期18天</td>
-                                <td>成功入职</td>
-                                <td>2015-11-11</td>
-                            </tr>
-                            </tbody>
-                        </table>
+    <div class="row margin-top-10">
+        <div class="wrap" id="data-container">
+            <div class="flip-container">
+                <div class="flip-box flip-y">
+                    <div class="flip face">
+                        <div id="data-update">
+                            <div>
+                                <p>数据更新</p>
+                                <p>Data Update</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="arrow arrow-right"></div>
-                </div>
-            </div>
-            <div id="data-update">
-                <div>
-                    <p>数据更新</p>
-                    <p>Data Update</p>
+                    <div class="flip back">
+                        <div id="data-list">
+                            <div class="slide-list">
+                                <div class="arrow arrow-left" data-direct="-1"></div>
+                                <div class="slide-content">
+                                    <table class="table active">
+                                        <tbody>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>JAVA工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>JAVA工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>JAVA工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>JAVA工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>JAVA工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>PHP工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>PHP工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>PHP工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>PHP工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>PHP工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>C++工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>C++工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>C++工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>C++工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海</td>
+                                            <td>C++工程师</td>
+                                            <td>年薪18万</td>
+                                            <td>周期18天</td>
+                                            <td>成功入职</td>
+                                            <td>2015-11-11</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="slide-light">
+                                    <span class="active"></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="arrow arrow-right" data-direct="1"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -90,20 +191,36 @@
         </div>
     </div>
     <div class="row bg-gray">
-        <div class="wrap clear-padding padding-top-20 padding-bottom-20">
+        <div class="wrap  padding-top-20 padding-bottom-20">
             <div class="col-xs-4">
-                <div class="text-center bg-white padding-10">
-                    <img src="/images/internet.png" alt="" class="inline-block v-bottom" width="24">
-                    <span>IT & 互联网</span>
+                <div class="flip-container professional-area">
+                    <div class="flip-box flip-x">
+                        <div class="flip face">
+                            <div class="text-center bg-white padding-10">
+                                <img src="/images/internet.png" alt="" class="inline-block v-bottom" width="24">
+                                <span>IT & 互联网</span>
+                            </div>
+                            <div class="padding-5 bg-white">
+                                <img src="/images/img_03.jpg" alt="" width="100%" height="220">
+                            </div>
+                        </div>
+                        <div class="flip back">
+                            <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
+                                <li class="padding-top-5 padding-bottom-5"><a class="black" href="/site/job/1">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></a></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="padding-5 bg-white">
-                    <img src="/images/img_03.jpg" alt="" width="100%">
-                </div>
-                <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
-                    <li class="padding-top-5 padding-bottom-5">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
-                </ul>
+
+
             </div>
             <div class="col-xs-4">
                 <div class="text-center bg-white padding-10">
@@ -134,7 +251,7 @@
                 </ul>
             </div>
         </div>
-        <div class="wrap clear-padding padding-bottom-20">
+        <div class="wrap  padding-bottom-20">
             <div class="col-xs-4">
                 <div class="text-center bg-white padding-10">
                     <img src="/images/machine.png" alt="" class="inline-block v-bottom" width="24">
@@ -180,12 +297,12 @@
         </div>
     </div>
     <div class="row">
-        <div class="wrap clear-padding">
-            <div class="col-xs-8 border-right border-width-2 border-color-main" id="news">
+        <div class="wrap ">
+            <div class="col-xs-8" id="news">
                 <h4 class="bg-white padding-top-10 padding-bottom-10">即沃视界 News</h4>
                 <ul class="no-style" id="news-title">
                     <li class="active padding-10 inline-block" data-target="0">走近猎头</li>
-                    <li class="padding-10 inline-block" data-target="1">HR</li>
+                    <li class="padding-10 inline-block" data-target="1">HR资讯</li>
                     <li class="padding-10 inline-block" data-target="2">职场动态</li>
                 </ul>
                 <div class="margin-top-20" id="news-content">
@@ -244,7 +361,7 @@
         </div>
     </div>
     <div class="row" id="contact">
-        <div class="wrap clear-padding">
+        <div class="wrap ">
             <h2 class="text-center blue margin-top-60">联系我们</h2>
             <hr class="border-color-blue">
             <div class="col-xs-6">
@@ -253,7 +370,7 @@
                 <p class="blue">咨询热线：400-700-8888</p>
                 <p class="padding-5 bg-white inline-block"><img src="/images/wx_qrcode.png" alt="" width="50" height="50"></p>
             </div>
-            <div class="col-xs-6 no-padding-right" id="contact-form">
+            <div class="col-xs-6" id="contact-form">
                 <div class="col-xs-5">
                     <p id="input_user"><input type="text" class="form-control bg-blue border-color-blue" value="您的姓名" onfocus="if (this.value =='您的姓名'){this.value =''}" onblur="if (this.value ==''){this.value='您的姓名'}"></p>
                     <p id="input_email"><input type="text" class="form-control bg-blue border-color-blue" value="您的E-Mail" onfocus="if (this.value =='您的E-Mail'){this.value =''}" onblur="if (this.value ==''){this.value='您的E-Mail'}"></p>

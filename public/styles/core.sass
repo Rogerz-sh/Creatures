@@ -4,19 +4,29 @@ $cLightMain: #0755C3
 $cWhite: #FFFFFF
 $wMain: 980px
 
-$colors: (background: #f2f2f2, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, gray: #cccccc, dark-gray: #999999, green: #009900, light-green: #00bb00, orange: #ed7721, cyan: #00edff, blue: #428bca)
+$dirList: left, right, top, bottom
+
+$colors: (background: #f2f2f2, black: #000, light-black: #333, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, gray: #cccccc, dark-gray: #999999, green: #009900, light-green: #00bb00, orange: #ed7721, cyan: #00edff, blue: #428bca)
 
 @function get-border($bw, $c)
   @return #{$bw}px solid #{$c}
 
 =border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  -ms-border-radius: $radius
-  border-radius: $radius
+  +css3interface(border-radius, $radius)
 
 =box-shadow($value)
-  -webkit-box-shadow: $value
-  -moz-box-shadow: $value
-  -ms-box-shadow: $value
-  box-shadow: $value
+  +css3interface(box-shadow, $value)
+
+=transition($value)
+  +css3interface(transition, $value)
+
+=css3interface($property, $value)
+  -webkit-#{$property}: $value
+  -moz-#{$property}: $value
+  -ms-#{$property}: $value
+  -o-#{$property}: $value
+  #{$property}: $value
+
+=full-size()
+  width: 100%
+  height: 100%

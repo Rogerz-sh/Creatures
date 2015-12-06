@@ -13,11 +13,18 @@
     <!--[if lt IE 9]><script src="/scripts/html5shiv.min.js"></script><![endif]-->
     <!--[if lte IE 8]><script src="/scripts/selectivizr.js"></script><![endif]-->
 </head>
-<body>
+<body class="padding-top-110">
     <header class="header">
         <div class="wrap">
             <div class="logo">
-                <img src="/images/logo_eye.png" height="110" />
+                <div class="flip-container">
+                    <div class="flip-box flip-x">
+                        <div class="flip face"><img src="/images/logo_eye.png" height="100%" width="100%" /></div>
+                        <div class="flip back"><img src="/images/logo.jpg" height="100%" width="100%" /></div>
+                    </div>
+                </div>
+
+                {{--<img src="/images/logo_eye.png" height="110" />--}}
                 {{--<div class="logo-text">即沃咨询 <small>Giewoo</small></div>--}}
             </div>
             <div class="quick-menu">
@@ -48,7 +55,6 @@
             </ul>
         </div>
     </nav>
-    <div class="margin-top-110"></div>
     @yield('content')
 </body>
 </html>

@@ -1,12 +1,19 @@
 @import "../core.sass"
 
-header
+header, .header
   position: fixed
   width: 100%
   height: 60px
   top: 0
   z-index: 999
   background-color: rgba(255,255,255,.9)
+
+footer, .footer
+  height: 50px
+  text-align: center
+  line-height: 50px
+  background-color: #333
+  color: #fff
 
 /*LOGO*/
 .logo
@@ -63,7 +70,7 @@ header
 
 /*Nav*/
 nav
-  background: rgba(0,0,0,.9)
+  background: rgba(0,0,0,.5)
   position: fixed
   width: 100%
   top: 60px
@@ -80,7 +87,7 @@ nav ul li
   float: left
 
 nav ul li.active
-  background-color: #999
+  background-color: #064279
 
 nav ul li:not(.active):hover
   background-color: #666
@@ -187,6 +194,7 @@ nav a:hover
 
 .slide-list
   position: relative
+  height: 100%
   &:after
     display: block
     content: ''
@@ -195,27 +203,56 @@ nav a:hover
     position: absolute
     width: 50px
     height: 200px
-    background: rgba(0, 0, 0, 0.1)
+    cursor: pointer
+    z-index: 1
     &.arrow-left
       left: 0
+      background: url('/images/arrow_left.png') no-repeat center, rgba(0, 0, 0, 0.1)
     &.arrow-right
       right: 0
+      background: url('/images/arrow_right.png') no-repeat center, rgba(0, 0, 0, 0.1)
   .slide-content
     position: absolute
     width: 100%
     padding: 0 50px
+    table
+      //display: none
+      position: absolute
+      top: 0
+      width: 880px
+      opacity: 0
+      +transition(opacity 0.3s linear)
+      &.active
+        //display: table
+        opacity: 1
+  .slide-light
+    position: absolute
+    bottom: -5px
+    width: 100%
+    text-align: center
+    span
+      display: inline-block
+      width: 20px
+      height: 4px
+      background-color: #cccccc
+      margin: 5px
+      bottom: 0
+      +border-radius(2px)
+      &.active
+        background-color: #333333
 
+#data-container
+  height: 200px
 #data-list
   position: relative
-  padding-right: 200px
   height: 200px
+  width: 100%
 #data-update
   position: absolute
   right: 0
   top: 0
-  width: 200px
-  min-height: 200px
-  height: 100%
+  width: 100%
+  height: 200px
   text-align: center
   font-size: 2em
   font-weight: bold
@@ -226,6 +263,13 @@ nav a:hover
     display: table-cell
     height: 100%
     vertical-align: middle
+
+
+.professional-area
+  width: 100%
+  height: 280px
+
+#news
 
 #news-title
   li
@@ -266,7 +310,7 @@ nav a:hover
     margin-top: 30px
   ul
     margin-left: 20px
-    width: 400px
+    width: 370px
     li
       padding: 5px 0
       white-space: nowrap
@@ -282,6 +326,8 @@ nav a:hover
           color: orange
 
 #career
+  background: url('/images/border.png') repeat-y top left
+  padding-left: 40px
   ul
     li
       padding: 10px 0
@@ -291,15 +337,6 @@ nav a:hover
   background: url('/images/contact_bg.jpg') no-repeat center/cover
   background-size: cover
   position: relative
-  //&:before
-  //  content: ''
-  //  position: absolute
-  //  width: 100%
-  //  height: 100%
-  //  top: 0
-  //  left: 0
-  //  //background-color: rgba(0,0,0,.7)
-  //  background: url('/images/contact_bg.jpg') no-repeat center/cover
 
 #contact-form
   .form-control

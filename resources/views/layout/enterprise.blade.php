@@ -12,6 +12,7 @@ $submenus = $navData['submenus'];
     <title>@yield('title')</title>
     <meta name="_token" content="{{csrf_token()}}">
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap.replace.css">
     <link rel="stylesheet" href="/styles/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/kendo.common-bootstrap.min.css">
     <link rel="stylesheet" href="/styles/kendo.bootstrap.min.css">

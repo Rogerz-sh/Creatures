@@ -53,6 +53,10 @@ label
   vertical-align: top
 .v-middle
   vertical-align: middle
+.ellipsis
+  overflow-x: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
 
 //  Fonts
 .font-sm
@@ -131,15 +135,19 @@ label
 
 .no-padding
   padding: 0
-.no-padding-left
-  padding-left: 0
-.no-padding-right
-  padding-right: 0
+.no-margin
+  margin: 0
+@each $dir in $dirList
+  .no-padding-#{$dir}
+    padding-#{$dir}: 0
+  .no-margin-#{$dir}
+    margin-#{$dir}: 0
 
-$dirList: left, right, top, bottom
 @for $i from 1 through 40
   .padding-#{$i*5}
     padding: #{$i*5}px
+  .margin-#{$i*5}
+    margin: #{$i*5}px
   @each $dir in $dirList
     .#{$dir}-#{$i*10}
       #{$dir}: #{$i*10}px
@@ -189,17 +197,55 @@ input[type=radio]
     background: $cMain
     background-clip: content-box
 
-//Fixes to bootstarp.min.css
-.form-group label
-  font-weight: normal
-.modal
-  width: 600px
-  margin: 0 auto
-  &.modal-sm
-    width: 300px
-  &.modal-lg
-    width: 900px
-  .modal-dialog
-    width: 100%
-  .modal-footer
-    text-align: left
+//css3 3d effects
+.flip-container
+  position: relative
+  perspective: 1000px
+  +full-size()
+  .flip-box
+    transform-style: preserve-3d
+    transition: all .6s ease-out
+    display: block
+    +full-size()
+    .flip
+      transform-style: preserve-3d
+      transition: all .6s ease-out
+      position: absolute
+      top: 0
+      left: 0
+      backface-visibility: hidden
+      overflow: hidden
+      display: block
+      +full-size()
+      &.face
+        z-index: 2
+      &.back
+        z-index: 1
+    &.flip-x
+      .flip
+        &.face
+          transform: rotateY(0deg)
+        &.back
+          transform: rotateY(-180deg)
+      &:hover, &.flipped
+        .flip
+          &.face
+            transform: rotateY(180deg)
+            z-index: 1
+          &.back
+            transform: rotateY(0deg)
+            z-index: 2
+    &.flip-y
+      .flip
+        &.face
+          transform: rotateX(0deg)
+        &.back
+          transform: rotateX(-180deg)
+      &:hover, &.flipped
+        .flip
+          &.face
+            transform: rotateX(180deg)
+            z-index: 1
+          &.back
+            transform: rotateX(0deg)
+            z-index: 2

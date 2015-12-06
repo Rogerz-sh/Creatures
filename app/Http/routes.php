@@ -16,6 +16,8 @@ Route::get('/', function () {
     return view('site.index');
 });
 
+Route::controller('site', 'SiteController');
+
 //Route::group(['prefix' => 'user'], function () {
 //
 //    Route::get('/', function () {
