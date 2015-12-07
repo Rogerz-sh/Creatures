@@ -18,4 +18,9 @@ $(function () {
         lights.eq(idx).addClass('active').siblings('span').removeClass('active');
 
     });
+
+    $('.flip-box').bind('click', function () {
+        $(this).toggleClass('flipped');
+    })
+
 });

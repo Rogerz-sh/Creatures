@@ -219,80 +219,148 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div class="col-xs-4">
-                <div class="text-center bg-white padding-10">
-                    <img src="/images/money.png" alt="" class="inline-block v-bottom" width="24">
-                    <span>金融</span>
+                <div class="flip-container professional-area">
+                    <div class="flip-box flip-x">
+                        <div class="flip face">
+                            <div class="text-center bg-white padding-10">
+                                <img src="/images/money.png" alt="" class="inline-block v-bottom" width="24">
+                                <span>IT & 互联网</span>
+                            </div>
+                            <div class="padding-5 bg-white">
+                                <img src="/images/img_05.jpg" alt="" width="100%" height="220">
+                            </div>
+                        </div>
+                        <div class="flip back">
+                            <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
+                                <li class="padding-top-5 padding-bottom-5"><a class="black" href="/site/job/1">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></a></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="padding-5 bg-white">
-                    <img src="/images/img_05.jpg" alt="" width="100%">
-                </div>
-                <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
-                    <li class="padding-top-5 padding-bottom-5">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
-                </ul>
             </div>
             <div class="col-xs-4">
-                <div class="text-center bg-white padding-10">
-                    <img src="/images/house.png" alt="" class="inline-block v-bottom" width="24">
-                    <span>房地产</span>
+                <div class="flip-container professional-area">
+                    <div class="flip-box flip-x">
+                        <div class="flip face">
+                            <div class="text-center bg-white padding-10">
+                                <img src="/images/house.png" alt="" class="inline-block v-bottom" width="24">
+                                <span>IT & 互联网</span>
+                            </div>
+                            <div class="padding-5 bg-white">
+                                <img src="/images/img_07.jpg" alt="" width="100%" height="220">
+                            </div>
+                        </div>
+                        <div class="flip back">
+                            <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
+                                <li class="padding-top-5 padding-bottom-5"><a class="black" href="/site/job/1">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></a></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="padding-5 bg-white">
-                    <img src="/images/img_07.jpg" alt="" width="100%">
-                </div>
-                <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
-                    <li class="padding-top-5 padding-bottom-5">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
-                </ul>
             </div>
         </div>
         <div class="wrap  padding-bottom-20">
             <div class="col-xs-4">
-                <div class="text-center bg-white padding-10">
-                    <img src="/images/machine.png" alt="" class="inline-block v-bottom" width="24">
-                    <span>机械制造</span>
+                <div class="flip-container professional-area">
+                    <div class="flip-box flip-x">
+                        <div class="flip face">
+                            <div class="text-center bg-white padding-10">
+                                <img src="/images/machine.png" alt="" class="inline-block v-bottom" width="24">
+                                <span>IT & 互联网</span>
+                            </div>
+                            <div class="padding-5 bg-white">
+                                <img src="/images/img_16.jpg" alt="" width="100%" height="220">
+                            </div>
+                        </div>
+                        <div class="flip back">
+                            <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
+                                <li class="padding-top-5 padding-bottom-5"><a class="black" href="/site/job/1">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></a></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="padding-5 bg-white">
-                    <img src="/images/img_14.jpg" alt="" width="100%">
-                </div>
-                <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
-                    <li class="padding-top-5 padding-bottom-5">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
-                </ul>
             </div>
             <div class="col-xs-4">
-                <div class="text-center bg-white padding-10">
-                    <img src="/images/sun.png" alt="" class="inline-block v-bottom" width="24">
-                    <span>文化 养老 健康</span>
+                <div class="flip-container professional-area">
+                    <div class="flip-box flip-x">
+                        <div class="flip face">
+                            <div class="text-center bg-white padding-10">
+                                <img src="/images/sun.png" alt="" class="inline-block v-bottom" width="24">
+                                <span>IT & 互联网</span>
+                            </div>
+                            <div class="padding-5 bg-white">
+                                <img src="/images/img_16.jpg" alt="" width="100%" height="220">
+                            </div>
+                        </div>
+                        <div class="flip back">
+                            <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
+                                <li class="padding-top-5 padding-bottom-5"><a class="black" href="/site/job/1">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></a></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="padding-5 bg-white">
-                    <img src="/images/img_16.jpg" alt="" width="100%">
-                </div>
-                <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
-                    <li class="padding-top-5 padding-bottom-5">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
-                </ul>
             </div>
             <div class="col-xs-4">
-                <div class="text-center bg-white padding-10">
-                    <img src="/images/cart.png" alt="" class="inline-block v-bottom" width="24">
-                    <span>消费品</span>
+                <div class="flip-container professional-area">
+                    <div class="flip-box flip-x">
+                        <div class="flip face">
+                            <div class="text-center bg-white padding-10">
+                                <img src="/images/cart.png" alt="" class="inline-block v-bottom" width="24">
+                                <span>IT & 互联网</span>
+                            </div>
+                            <div class="padding-5 bg-white">
+                                <img src="/images/img_12.jpg" alt="" width="100%" height="220">
+                            </div>
+                        </div>
+                        <div class="flip back">
+                            <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
+                                <li class="padding-top-5 padding-bottom-5"><a class="black" href="/site/job/1">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></a></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
+                                <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="padding-5 bg-white">
-                    <img src="/images/img_12.jpg" alt="" width="100%">
-                </div>
-                <ul class="no-style bg-white padding-5 padding-left-10 padding-right-10">
-                    <li class="padding-top-5 padding-bottom-5">某知名银行 <small>预算管理</small> <span class="pull-right orange">10-15万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某知名证券公司 <small>综合业务管理</small> <span class="pull-right orange">15-25万</span></li>
-                    <li class="padding-top-5 padding-bottom-5">某互联网金融公司 <small>综合业务管理</small> <span class="pull-right orange">30-50万</span></li>
-                </ul>
             </div>
         </div>
     </div>

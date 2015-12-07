@@ -213,7 +213,7 @@ input[type=radio]
       position: absolute
       top: 0
       left: 0
-      backface-visibility: hidden
+      +css3interface(backface-visibility, hidden)
       overflow: hidden
       display: block
       +full-size()
@@ -227,25 +227,67 @@ input[type=radio]
           transform: rotateY(0deg)
         &.back
           transform: rotateY(-180deg)
-      &:hover, &.flipped
-        .flip
-          &.face
-            transform: rotateY(180deg)
-            z-index: 1
-          &.back
-            transform: rotateY(0deg)
-            z-index: 2
+      //&:hover, &.flipped
+      //  .flip
+      //    &.face
+      //      transform: rotateY(180deg)
+      //      z-index: 1
+      //    &.back
+      //      transform: rotateY(0deg)
+      //      z-index: 2
     &.flip-y
       .flip
         &.face
           transform: rotateX(0deg)
         &.back
           transform: rotateX(-180deg)
-      &:hover, &.flipped
-        .flip
-          &.face
-            transform: rotateX(180deg)
-            z-index: 1
-          &.back
-            transform: rotateX(0deg)
-            z-index: 2
+      //&:hover, &.flipped
+      //  .flip
+      //    &.face
+      //      transform: rotateX(180deg)
+      //      z-index: 1
+      //    &.back
+      //      transform: rotateX(0deg)
+      //      z-index: 2
+@media screen and (max-width: 1020px)
+  .flip-container
+    .flip-box
+      &.flip-x
+        &.flipped
+          .flip
+            &.face
+              transform: rotateY(180deg)
+              z-index: 1
+            &.back
+              transform: rotateY(0deg)
+              z-index: 2
+      &.flip-y
+        &.flipped
+          .flip
+            &.face
+              transform: rotateX(180deg)
+              z-index: 1
+            &.back
+              transform: rotateX(0deg)
+              z-index: 2
+@media screen and (min-width: 1021px)
+  .flip-container
+    .flip-box
+      &.flip-x
+        &:hover
+          .flip
+            &.face
+              transform: rotateY(180deg)
+              z-index: 1
+            &.back
+              transform: rotateY(0deg)
+              z-index: 2
+      &.flip-y
+        &:hover
+          .flip
+            &.face
+              transform: rotateX(180deg)
+              z-index: 1
+            &.back
+              transform: rotateX(0deg)
+              z-index: 2
