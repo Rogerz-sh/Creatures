@@ -195,6 +195,7 @@ nav a:hover
 .slide-list
   position: relative
   height: 100%
+  width: 100%
   &:after
     display: block
     content: ''
@@ -219,7 +220,7 @@ nav a:hover
       //display: none
       position: absolute
       top: 0
-      width: 880px
+      width: 680px
       opacity: 0
       +transition(opacity 0.3s linear)
       &.active
@@ -243,15 +244,19 @@ nav a:hover
 
 #data-container
   height: 200px
-#data-list
   position: relative
+#data-list
+  position: absolute
   height: 200px
-  width: 100%
+  width: 780px
+  left: 0
+  top: 0
+  z-index: 1
 #data-update
   position: absolute
   right: 0
   top: 0
-  width: 100%
+  width: 200px
   height: 200px
   text-align: center
   font-size: 2em

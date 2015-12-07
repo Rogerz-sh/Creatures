@@ -64,23 +64,23 @@ nav a:hover { color: #fff; text-decoration: none; }
 
 .toolkit-button { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; width: 220px; padding: 10px; margin: 10px; text-align: center; background: #fa2; }
 
-.slide-list { position: relative; height: 100%; }
+.slide-list { position: relative; height: 100%; width: 100%; }
 .slide-list:after { display: block; content: ""; clear: both; }
 .slide-list .arrow { position: absolute; width: 50px; height: 200px; cursor: pointer; z-index: 1; }
 .slide-list .arrow.arrow-left { left: 0; background: url("/images/arrow_left.png") no-repeat center, rgba(0, 0, 0, 0.1); }
 .slide-list .arrow.arrow-right { right: 0; background: url("/images/arrow_right.png") no-repeat center, rgba(0, 0, 0, 0.1); }
 .slide-list .slide-content { position: absolute; width: 100%; padding: 0 50px; }
-.slide-list .slide-content table { position: absolute; top: 0; width: 880px; opacity: 0; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; -ms-transition: opacity 0.3s linear; -o-transition: opacity 0.3s linear; transition: opacity 0.3s linear; }
+.slide-list .slide-content table { position: absolute; top: 0; width: 680px; opacity: 0; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; -ms-transition: opacity 0.3s linear; -o-transition: opacity 0.3s linear; transition: opacity 0.3s linear; }
 .slide-list .slide-content table.active { opacity: 1; }
 .slide-list .slide-light { position: absolute; bottom: -5px; width: 100%; text-align: center; }
 .slide-list .slide-light span { display: inline-block; width: 20px; height: 4px; background-color: #cccccc; margin: 5px; bottom: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 .slide-list .slide-light span.active { background-color: #333333; }
 
-#data-container { height: 200px; }
+#data-container { height: 200px; position: relative; }
 
-#data-list { position: relative; height: 200px; width: 100%; }
+#data-list { position: absolute; height: 200px; width: 780px; left: 0; top: 0; z-index: 1; }
 
-#data-update { position: absolute; right: 0; top: 0; width: 100%; height: 200px; text-align: center; font-size: 2em; font-weight: bold; background: #1F459A; color: #fff; display: table; }
+#data-update { position: absolute; right: 0; top: 0; width: 200px; height: 200px; text-align: center; font-size: 2em; font-weight: bold; background: #1F459A; color: #fff; display: table; }
 #data-update div { display: table-cell; height: 100%; vertical-align: middle; }
 
 .professional-area { width: 100%; height: 280px; }
