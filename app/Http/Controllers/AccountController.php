@@ -68,8 +68,8 @@ class AccountController extends BaseController {
 class MenuData {
 
     public static function jsonMenu() {
-        $menus = Menu::where('depth', 1)->where('status', 1)->get();
-        $submenus = menu::where('depth', 2)->where('status', 1)->get();
+        $menus = Menu::where('depth', 1)->where('status', 1)->where('belong_to', 'enterprise')->get();
+        $submenus = Menu::where('depth', 2)->where('status', 1)->where('belong_to', 'enterprise')->get();
 
         function getSubs($subs, $mid) {
             $submenu = array();

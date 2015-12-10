@@ -18,4 +18,11 @@ $(function () {
         lights.eq(idx).addClass('active').siblings('span').removeClass('active');
 
     });
+
+    $('.site-nav li').each(function (i, li) {
+        $(li).click(function () {
+            $(this).addClass('active').siblings('li').removeClass('active');
+            $('.site-content li').eq(i).addClass('active').siblings('li').removeClass('active');
+        });
+    });
 });

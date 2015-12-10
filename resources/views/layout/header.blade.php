@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>@yield('title')</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/bootstrap.replace.css">
@@ -44,17 +45,21 @@
     <nav>
         <div class="wrap">
             <ul>
-                <li class="active"><a href="/">首页</a></li>
-                <li><a href="/">猎头服务</a></li>
-                <li><a href="/">极速猎车</a></li>
-                <li><a href="/">成功案例</a></li>
-                <li><a href="/">职业发展</a></li>
-                <li><a href="/">俱乐部</a></li>
-                <li><a href="/">加入我们</a></li>
+                <li @if($navIndex == 0)class="active"@endif><a href="/">首页</a></li>
+                <li @if($navIndex == 1)class="active"@endif><a href="/site/hunter">猎头服务</a></li>
+                <li @if($navIndex == 2)class="active"@endif><a href="/site/train">极速猎车</a></li>
+                <li @if($navIndex == 3)class="active"@endif><a href="/">成功案例</a></li>
+                <li @if($navIndex == 4)class="active"@endif><a href="/">职业发展</a></li>
+                <li @if($navIndex == 5)class="active"@endif><a href="/">俱乐部</a></li>
+                <li @if($navIndex == 6)class="active"@endif><a href="/">加入我们</a></li>
 
             </ul>
         </div>
     </nav>
     @yield('content')
+    <div id="loading">
+        <div class="circle animation"></div>
+        <div class="circle text"></div>
+    </div>
 </body>
 </html>

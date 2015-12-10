@@ -29,16 +29,6 @@
 
 #main { width: 760px; float: right; position: relative; top: 0; right: 0; }
 
-#loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); z-index: 999; }
-#loading .circle { width: 100px; height: 100px; position: absolute; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px; }
-#loading .circle.animation { border: 5px solid #0755C3; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border-left-color: transparent; animation: circle 2s linear infinite; }
-#loading .circle.text:before { content: "Loading..."; display: block; width: 100%; height: 100%; text-align: center; padding-top: 40px; color: #0755C3; font-weight: bold; }
-
-@keyframes circle { 0% { transform: rotate(0deg); }
-  25% { transform: rotate(90deg); }
-  50% { transform: rotate(180deg); }
-  75% { transform: rotate(270deg); }
-  100% { transform: rotate(360deg); } }
 .tabs .tab-title ul { list-style: none; margin: 0; border-bottom: 3px solid #999; padding: 0 10px; }
 .tabs .tab-title ul li { display: inline-block; padding: 10px 20px; border-bottom: 3px solid #999; font-size: 1.1em; margin-bottom: -3px; cursor: pointer; }
 .tabs .tab-title ul li.active { border-color: #173E75; }

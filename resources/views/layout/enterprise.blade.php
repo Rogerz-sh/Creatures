@@ -4,7 +4,6 @@ $name = Session::get('name');
 $navData = Session::get('navData');
 $menus = $navData['menus'];
 $submenus = $navData['submenus'];
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,12 +26,17 @@ $submenus = $navData['submenus'];
     <script src="/scripts/bootstrap.min.js"></script>
     <script src="/scripts/kendo.all.min.js"></script>
     <script src="/scripts/kendo.culture.zh-CN.min.js"></script>
+    <script src="/scripts/kendo.messages.zh-CN.min.js"></script>
     <script src="/scripts/prototype.js"></script>
     <!--[if lt IE 9]><script src="/scripts/html5shiv.min.js"></script><![endif]-->
     <!--[if lte IE 8]><script src="/scripts/selectivizr.js"></script><![endif]-->
     @yield('page-head')
 </head>
 <body class="bg-background">
+<div id="loading">
+    <div class="circle animation"></div>
+    <div class="circle text"></div>
+</div>
 <div class="wrapper">
     <div id="header" class="bg-main">
         <div class="wrap padding-left-10 padding-right-10">

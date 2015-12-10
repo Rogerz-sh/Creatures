@@ -106,52 +106,6 @@
   top: 0
   right: 0
 
-#loading
-  display: none
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background-color: rgba(0, 0, 0, .1)
-  z-index: 999
-  .circle
-    width: 100px
-    height: 100px
-    position: absolute
-    top: 50%
-    left: 50%
-    margin-top: -50px
-    margin-left: -50px
-    &.animation
-      border: 5px solid $cLightMain
-      +border-radius(50%)
-      border-left-color: rgba(0,0,0,0)
-      //border-left: none
-      animation: circle 2s linear infinite
-
-    &.text:before
-      content: 'Loading...'
-      display: block
-      width: 100%
-      height: 100%
-      text-align: center
-      padding-top: 40px
-      color: $cLightMain
-      font-weight: bold
-
-@keyframes circle
-  0%
-    transform: rotate(0deg)
-  25%
-    transform: rotate(90deg)
-  50%
-    transform: rotate(180deg)
-  75%
-    transform: rotate(270deg)
-  100%
-    transform: rotate(360deg)
-
 .tabs
   .tab-title
     ul

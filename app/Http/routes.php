@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('site.index');
+    return view('site.index')->with('navIndex', 0);
 });
 
 Route::controller('site', 'SiteController');
@@ -34,6 +34,8 @@ Route::controller('user', 'UserController');
 
 Route::controller('account', 'AccountController');
 
+Route::controller('system', 'SystemController');
+
 
 Route::group(['middleware' => 'login'], function () {
 
@@ -46,5 +48,15 @@ Route::group(['middleware' => 'login'], function () {
     Route::controller('meeting', 'MeetingController');
 
     Route::controller('search', 'SearchController');
+
+});
+
+Route::group(['middleware' => 'manager'], function () {
+
+    Route::controller('manager', 'ManagerController');
+
+    Route::controller('virtual-job', 'VirtualJobController');
+
+    Route::controller('article', 'ArticleController');
 
 });
