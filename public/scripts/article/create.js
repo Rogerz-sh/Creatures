@@ -28,10 +28,7 @@ $(function () {
             {
                 name: 'source',
                 target: '#source',
-                type: 'input',
-                rules: [
-                    {rule: 'url', errMsg: '网络地址格式不正确'}
-                ]
+                type: 'input'
             },
             {
                 name: 'author',

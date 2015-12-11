@@ -148,7 +148,7 @@ $(function () {
             },
             {
                 name: 'showing',
-                target: '#showing',
+                target: 'input[name="showing"]',
                 type: 'radio'
             },
         ]

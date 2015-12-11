@@ -18,6 +18,10 @@ $(function () {
                         $('#'+name).html(bq);
                     }
                     break;
+                case 'publish':
+                    var date = new Date(res[name].replace(/-/g, '/')).format();
+                    $('#'+name).text(date);
+                    break;
                 case 'source':
                     var src = res[name];
                     if (src == '') $('#'+name).text('即沃原创');

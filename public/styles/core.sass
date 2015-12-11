@@ -6,7 +6,8 @@ $wMain: 980px
 
 $dirList: left, right, top, bottom
 
-$colors: (background: #f2f2f2, yellow: #FEF143, black: #000, light-black: #333, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, gray: #cccccc, dark-gray: #999999, green: #009900, light-green: #00bb00, light-orange: #FF8F3E, orange: #EA8533, dark-orange: #FF6B01, cyan: #00edff, blue: #428bca)
+$colors: (background: #f2f2f2, yellow: #FEF143, black: #000, light-black: #333, white:#ffffff, main: #173e75, dark-main: #0a2c5d, light-main: #0755c3, red: #ee0000, light-gray: #eeeeee, gray: #cccccc, dark-gray: #999999, green: #009900, light-green: #00bb00, light-orange: #FF8F3E, orange: #F38E00, dark-orange: #FF6B01, cyan: #00edff, blue: #428bca, smoke: #f2f2f2)
+
 
 @function get-border($bw, $c)
   @return #{$bw}px solid #{$c}
@@ -35,3 +36,6 @@ $colors: (background: #f2f2f2, yellow: #FEF143, black: #000, light-black: #333, 
   overflow-x: hidden
   white-space: nowrap
   text-overflow: ellipsis
+
+@function getColor($color)
+  @return map_get($colors, $color)

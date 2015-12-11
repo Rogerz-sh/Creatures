@@ -36,11 +36,11 @@ class VirtualJobController extends BaseController {
     }
 
     public function getEdit ($id) {
-        return view('virtual-job.edit')->with(['navIndex'=>1, 'id'=>$id]);
+        return view('virtual-job.edit')->with('navIndex', 1)->with('id', $id);
     }
 
     public function getJsonJobData ($id) {
-        $job = VirtualJob::find($id)->first();
+        $job = VirtualJob::find($id);
         return response($job);
     }
 

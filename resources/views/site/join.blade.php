@@ -1,10 +1,10 @@
 @extends('layout.header')
-@section('title', '即沃咨询 - 猎头服务')
+@section('title', '即沃咨询 - 加入我们')
 @section('content')
     <div class="container-fluid">
         <div class="row">
             <div class="wrapper">
-                <img src="/images/job_career.jpg" alt="猎头服务" width="100%" height="300">
+                <img src="/images/about_us.jpg" alt="猎头服务" width="100%" height="300">
             </div>
         </div>
         <div class="row margin-top-20">
@@ -19,24 +19,30 @@
             <div class="wrap">
                 <div class="col-xs-4">
                     <ul class="site-nav">
-                        <li class="active">服务优势</li>
-                        <li>服务流程</li>
-                        <li>服务保障</li>
+                        <li class="active" data-target="#tab1">员工成长发展</li>
+                        <li class="sub-nav-title">招聘职位</li>
+                        <ul class="site-sub-nav">
+                            <li data-target="#job1">猎头顾问</li>
+                            <li>顾问助理</li>
+                            <li>市场主管</li>
+                            <li>实习生</li>
+                        </ul>
                     </ul>
                 </div>
                 <div class="col-xs-8">
                     <ul class="site-content">
-                        <li class="active">
-                            <p class="indent">为什么选择即沃？</p>
-                            <p class="indent"><b>连续三年，推荐成功概率85.7%以上</b> — 平均每推荐3.3个候选人就能得到一个offer的命中率；超过70%的客户的Vendor中，新猎夫的份额是No. 1</p>
-                            <p class="indent"><b>百万级中高端人才库</b> — 涵盖了五十多个细分行业，囊括了上万家著名企业，能够在第一时间做出人才推荐</p>
-                            <p class="indent"><b>高性价比</b> — 以互联网为工具，自主研发的业务管理系统、网络平台系统以及候选人管理系统的一体化强化了内部流程和效率的提升，降低了猎头费用，给客户提供了最优的服务体验</p>
-                            <p class="indent"><b>专家级顾问团队</b> — 猎头顾问大多来自跨国公司、上市公司和大型名营企业，平均从业经验6年以上，具有广泛的人脉资源且超过七成顾问毕业于国内外知名院校。</p>
-                            <p class="indent"><b>完善的服务保障</b> — 0预付，按照结果付费，候选人离职免费替补，严格遵守商业保密契约和人才保护约束</p>
-                            <p class="indent"><b>业务覆盖区域广</b> - 总部位于上海，以华东为中心，向全国覆盖猎头业务，在全国拥有11个资源共享的分支机构，业务涉及遍布全国50多个城市</p>
-                            <p class="indent"><b>免费管理咨询服务</b> — 为企业提供免费的选人、用人、留人、育人方案、人才测评等咨询服务，提供职业规划和发展指导</p>
+                        <li class="active" id="tab1">
+                            <p class="indent">作为专业的猎头服务机构，我们的员工是即沃的重要资产。我们重视每一位员工的发展及其贡献， 一直致力于为员工提供快乐且具有挑战性的工作、轻松的工作环境、完善的培训机制，以及具有竞争力的薪酬福利，从而吸引和发展更多优秀人才在即沃打造属于自己的平台和事业。</p>
+                            <p class="indent"><strong>职业发展路径 ：</strong></p>
+                            <p class="indent">公司为员工提供至少三种职业成长通道：专家级高级顾问；项目经理／区域经理；合伙人／高级合伙人</p>
+                            <p class="indent">绩效管理流程帮助员工更有效的管理职业生涯：一年四次的绩效与职业发展交流活动，为员工提供无障碍升迁平台；</p>
+                            <p class="indent"><strong>员工培训：</strong></p>
+                            <p class="indent">即沃提供多种培训计划，如入职培训、专业知识培训、管理技能培训、职业发展培训，员工经验分享、成长训练营等，帮助员工持续学习，快速成长，达成发展目标。</p>
+                            <p class="indent"><strong>薪酬福利：</strong></p>
+                            <p class="indent">加入即沃，除了具有市场竞争力的薪酬以外，您还将得到：</p>
+                            <p class="indent">五险一金、 绩效奖金、培训、带薪年假 、旅游、员工关怀活动、节假日福利等</p>
                         </li>
-                        <li>
+                        <li id="job1">
                             <p class="indent"><b>1、评估需求</b></p>
                             <p class="indent">通过对客户进行拜访，详细了解客户的企业文化、公司背景、行业和产品特点，与客户进行充分、有效的沟通与探讨，确定所需招聘岗位的职责、任职条件、特别要求及相应的薪酬范围</p>
                             <p class="indent"><b>2、签订服务协议 </b></p>

@@ -30,13 +30,13 @@
                     <div class="form-group">
                         <div class="col-xs-6 no-padding error-box">
                             <label class="control-label col-xs-4">原文作者</label>
-                            <div class="col-xs-8">
+                            <div class="col-xs-8 help-box">
                                 <input type="text" name="author" id="author" class="form-control" />
                             </div>
                         </div>
                         <div class="col-xs-6 no-padding error-box">
                             <label class="control-label col-xs-4">发布日期</label>
-                            <div class="col-xs-8">
+                            <div class="col-xs-8 help-box">
                                 <input type="text" name="publish" id="publish" value="" class="form-control size-full" />
                             </div>
                         </div>
@@ -44,15 +44,15 @@
                     <div class="form-group">
                         <div class="col-xs-6 no-padding error-box">
                             <label class="control-label col-xs-4">关键词</label>
-                            <div class="col-xs-8">
+                            <div class="col-xs-8 help-box">
                                 <input type="text" name="keywords" id="keywords" class="form-control" placeholder="关键词以空格分割，最多输入5个" />
                             </div>
                         </div>
                         <div class="col-xs-6 no-padding error-box">
                             <label class="control-label col-xs-4">文章类目</label>
-                            <div class="col-xs-8">
+                            <div class="col-xs-8 help-box">
                                 <select name="type" id="type" class="form-control size-full">
-                                    <option value="0">请选择</option>
+                                    <option value="">请选择</option>
                                     <option value="1">走近猎头</option>
                                     <option value="2">HR资讯</option>
                                     <option value="3">职场动态</option>
@@ -63,13 +63,13 @@
                     <div class="form-group">
                         <label class="control-label col-xs-2">引言</label>
                         <div class="col-xs-10">
-                            <textarea name="blockquote" id="blockquote" rows="4" class="form-control"></textarea>
+                            <textarea name="blockquote" id="blockquote" rows="6" class="form-control"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-xs-2">正文</label>
-                        <div class="col-xs-10">
-                            <textarea name="content" id="content" rows="6" class="form-control"></textarea>
+                        <div class="col-xs-10 help-box">
+                            <textarea name="content" id="content" rows="18" class="form-control"></textarea>
                         </div>
                     </div>
                     <div class="form-group">

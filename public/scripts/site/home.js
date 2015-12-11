@@ -13,16 +13,23 @@ $(function () {
         var direct = ~~$(this).data('direct');
         slideIndex += direct;
         var idx = slideIndex % 3, tables = $('.slide-content table'), lights = $('.slide-light span');
-        idx = idx < 0 ? 3 - idx : idx;
+        idx = idx < 0 ? 3 + idx : idx;
         tables.eq(idx).addClass('active').siblings('table').removeClass('active');
         lights.eq(idx).addClass('active').siblings('span').removeClass('active');
 
     });
 
-    $('.site-nav li').each(function (i, li) {
+    $('.site-nav li:not(.sub-nav-title)').each(function (i, li) {
         $(li).click(function () {
-            $(this).addClass('active').siblings('li').removeClass('active');
-            $('.site-content li').eq(i).addClass('active').siblings('li').removeClass('active');
+            var target = $(this).data('target')
+            $('.site-nav li').removeClass('active');
+            $(this).addClass('active').parent().prev('.sub-nav-title').addClass('active');
+            $('.site-content li').removeClass('active');
+            $(target).addClass('active');
         });
+    });
+
+    $('#side-tools').delegate('li.side-tools-top', 'click', function () {
+        $(document).scrollTop(0)
     });
 });

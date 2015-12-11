@@ -2,12 +2,11 @@
 
 //Header样式
 header, .header
-  position: fixed
   width: 100%
   height: 60px
   top: 0
   z-index: 999
-  background-color: rgba(255,255,255,.9)
+  //background-color: getColor(yellow)
 
 //Footer样式
 footer, .footer
@@ -19,7 +18,7 @@ footer, .footer
 
 /*LOGO*/
 .logo
-  position: fixed
+  position: absolute
   margin: 5px 0 0 0
   height: 115px
   width: 115px
@@ -45,12 +44,10 @@ footer, .footer
     font-weight: bold
     font-family: "微软雅黑"
 
-
-
 /*Nav*/
 nav
-  background: rgba(0,0,0,.5)
-  position: fixed
+  background: getColor(orange)
+  //position: fixed
   width: 100%
   top: 60px
   z-index: 99
@@ -59,22 +56,32 @@ nav ul
   float: left
   margin: 0 0 0 150px
   list-style: none
-  line-height: 50px
   font-weight: bold
 
 nav ul li
   float: left
+  height: 50px
 
 nav ul li.active
-  background-color: #064279
+  background-color: getColor(dark-orange)
 
 nav ul li:not(.active):hover
-  background-color: #666
+  //background-color: getColor(yellow)
+  position: relative
+  &:after
+    content: ''
+    width: 100%
+    display: block
+    position: absolute
+    bottom: 0
+    height: 5px
+    background: getColor(yellow)
 
 nav a
   color: #fff
   padding: 0 20px
-
+  display: block
+  line-height: 50px
 nav a:hover
   color: #fff
   text-decoration: none
@@ -94,7 +101,7 @@ nav a:hover
       float: left
   a
     padding: 0 5px
-    color: $cMain
+    //color: $cMain
     text-decoration: none
   a:hover
     color: rgb(238, 102, 17)
@@ -104,7 +111,49 @@ nav a:hover
     font-size: 1.5em
     font-weight: bold
 
-
+//侧边工具栏
+#side-tools
+  position: fixed
+  right: 0
+  top: 40%
+  ul
+    width: 60px
+    border: 1px solid getColor(orange)
+    li
+      width: 100%
+      text-align: center
+      height: 60px
+      background: getColor(orange)
+      color: #fff
+      cursor: pointer
+      &:not(:last-child)
+        border-bottom: 1px solid getColor(yellow)
+      &:last-child
+        background: #fff
+        color: getColor(orange)
+      &.side-tools-handler
+        .side-tools-hide
+          display: none
+          position: absolute
+          max-width: 200px
+          right: 85px
+          min-height: 60px
+          background: getColor(orange)
+          &:after
+            content: ''
+            display: block
+            position: absolute
+            width: 0
+            height: 0
+            border: 20px solid getColor(orange)
+            border-right-color: transparent
+            border-bottom-color: transparent
+            border-top-color: transparent
+            top: 10px
+            right: -40px
+        &:hover
+          .side-tools-hide
+            display: block
 
 /*Background*/
 .header.bg
@@ -182,12 +231,8 @@ nav a:hover
   margin: 10px 20px
 
 .toolkit-button
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
   box-sizing: border-box
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  border-radius: 5px
+  +border-radius(5px)
   width: 220px
   padding: 10px
   margin: 10px
@@ -208,26 +253,22 @@ nav a:hover
     height: 200px
     cursor: pointer
     z-index: 1
+    background: getColor(yellow)
     &.arrow-left
       left: 0
-      background: url('/images/arrow_left.png') no-repeat center, rgba(0, 0, 0, 0.1)
     &.arrow-right
       right: 0
-      background: url('/images/arrow_right.png') no-repeat center, rgba(0, 0, 0, 0.1)
   .slide-content
     position: absolute
     width: 100%
     padding: 0 50px
-    table
-      //display: none
+    &>*
+      display: none
       position: absolute
       top: 0
       width: 680px
-      opacity: 0
-      +transition(opacity 0.3s linear)
       &.active
-        //display: table
-        opacity: 1
+        display: table
   .slide-light
     position: absolute
     bottom: -5px
@@ -237,12 +278,12 @@ nav a:hover
       display: inline-block
       width: 20px
       height: 4px
-      background-color: #cccccc
+      background-color: getColor(yellow)
       margin: 5px
       bottom: 0
       +border-radius(2px)
       &.active
-        background-color: #333333
+        background-color: getColor(orange)
 
 #data-container
   height: 200px
@@ -263,7 +304,7 @@ nav a:hover
   text-align: center
   font-size: 2em
   font-weight: bold
-  background: #1F459A
+  background: getColor(orange)
   color: #fff
   display: table
   div
@@ -291,7 +332,7 @@ nav a:hover
     &:last-child
       margin-right: 0
     &.active
-      background: $cMain
+      background: getColor(orange)
       color: #fff
       a
         color: #fff
@@ -299,7 +340,7 @@ nav a:hover
         content: ''
         width: 0
         height: 0
-        border: 15px solid $cMain
+        border: 15px solid getColor(orange)
         border-right-color: transparent
         border-left-color: transparent
         border-bottom-color: transparent
@@ -317,12 +358,11 @@ nav a:hover
     margin-top: 30px
   ul
     margin-left: 20px
-    width: 370px
+    //width: 370px
+    min-height: 180px
+    padding-left: 220px
     li
       padding: 5px 0
-      white-space: nowrap
-      overflow: hidden
-      text-overflow: ellipsis
       &:before
         content: '>'
         display: inline-block
@@ -333,21 +373,23 @@ nav a:hover
           color: orange
 
 #career
-  background: url('/images/border.png') repeat-y top left
-  padding-left: 40px
+  //background: url('/images/border.png') repeat-y top left
+  //padding-left: 40px
   ul
     li
       padding: 10px 0
+      width: 32%
 
 #contact
   height: 350px
-  background: url('/images/contact_bg.jpg') no-repeat center/cover
+  background: url('/images/contact_us.jpg') no-repeat center/cover
   background-size: cover
   position: relative
 
 #contact-form
   .form-control
-    color: #add1f1
+    color: getColor(light-black)
+    background: rgba(getColor(orange), .3)
   input.form-control
     height: 40px
     padding-left: 30px
@@ -357,6 +399,10 @@ nav a:hover
     resize: none
   button.btn
     height: 40px
+    color: getColor(light-black)
+    background: rgba(getColor(orange), .3)
+    outline-color: getColor(orange)
+    font-size: 14px
   p
     position: relative
     &:before
@@ -367,7 +413,7 @@ nav a:hover
       width: 30px
       padding-top: 9px
       text-align: center
-      color: #add1f1
+      color: getColor(light-black)
   #input_user:before
     content: '\f007'
   #input_email:before
@@ -384,26 +430,49 @@ nav a:hover
   border: 1px solid #ddd
   padding: 5px
   +border-radius(5px)
-  li
+  &>li
     padding: 10px 15px
     border: 1px solid #ddd
     +border-radius(5px)
     margin: 5px 0
     cursor: pointer
     &.active
-      border: 1px solid $cMain
-      background: $cMain
+      border: 1px solid getColor(orange)
+      background: getColor(orange)
       color: #fff
       &:after
         content: '>'
         display: block
         float: right
     &:not(.active):hover
-      background: #ccc
+      background: #eee
       &:after
         content: '>'
         display: block
         float: right
+    &.sub-nav-title
+      &.active:hover
+        background: getColor(orange)
+        color: #fff
+      &:hover
+        color: inherit
+        &:after
+          content: ''
+  .site-sub-nav
+    padding: 0 10px
+    li
+      padding: 5px
+      cursor: pointer
+      &:hover
+        color: getColor(orange)
+      &.active
+        color: getColor(orange)
+      &:before
+        content: '>'
+        color: getColor(orange)
+        margin-right: 5px
+
+
 .site-content
   li
     display: none

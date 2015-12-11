@@ -1,6 +1,6 @@
 ﻿(function ($) {
     $.fn.setValidateMessage = function (status, msg, flag, parent) {
-        var $this = $(this), $parent = parent || $this.parent(), $group = $this.parents('.error-box').length ? $this.parents('.error-box') : $this.parents('.form-group'), flag = flag || 'help-block', $help;
+        var $this = $(this), $parent = parent || $this.parents('.help-box').length ? $this.parents('.help-box') : $this.parent(), $group = $this.parents('.error-box').length ? $this.parents('.error-box') : $this.parents('.form-group'), flag = flag || 'help-block', $help;
         if ($parent.find('.' + flag).length == 0) {
             $('<span class="' + flag + ' hide"></span>').appendTo($parent);
         }

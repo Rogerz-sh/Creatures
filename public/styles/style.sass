@@ -64,6 +64,8 @@ label
   &>*
     display: table-cell
     vertical-align: middle
+.border-circle
+  +border-radius(50%)
 
 //  Fonts
 .font-sm
@@ -155,6 +157,10 @@ label
     padding: #{$i*5}px
   .margin-#{$i*5}
     margin: #{$i*5}px
+  .width-#{$i*10}
+    width: #{$i*10}px
+  .height-#{$i*10}
+    height: #{$i*10}px
   @each $dir in $dirList
     .#{$dir}-#{$i*10}
       #{$dir}: #{$i*10}px
@@ -222,7 +228,7 @@ input[type=radio]
       position: absolute
       top: 0
       left: 0
-      backface-visibility: hidden
+      +css3interface(backface-visibility, hidden)
       overflow: hidden
       display: block
       +full-size()
@@ -272,6 +278,18 @@ input[type=radio]
   100%
     transform: rotate(360deg)
 
+@keyframes flip
+  0%
+    transform: rotateY(0deg)
+  25%
+    transform: rotateY(90deg)
+  50%
+    transform: rotateY(180deg)
+  75%
+    transform: rotateY(270deg)
+  100%
+    transform: rotateY(360deg)
+
 #loading
   display: none
   position: fixed
@@ -281,27 +299,34 @@ input[type=radio]
   height: 100%
   background-color: rgba(0, 0, 0, .1)
   z-index: 999
+  opacity: .9
+  perspective: 1000px
   .circle
-    width: 100px
-    height: 100px
+    width: 120px
+    height: 120px
     position: absolute
     top: 50%
     left: 50%
-    margin-top: -50px
-    margin-left: -50px
+    margin-top: -60px
+    margin-left: -60px
     &.animation
-      border: 5px solid $cLightMain
+      border: 8px solid getColor(orange)
       +border-radius(50%)
       border-left-color: rgba(0,0,0,0)
       //border-left: none
       animation: circle 2s linear infinite
 
-    &.text:before
-      content: 'Loading...'
-      display: block
-      width: 100%
-      height: 100%
-      text-align: center
-      padding-top: 40px
-      color: $cLightMain
-      font-weight: bold
+    &.text
+      transform-style: preserve-3d
+      animation: flip 2s linear infinite
+      &:before
+        content: ''
+        display: block
+        //width: 100%
+        height: 80%
+        margin: 10px
+        text-align: center
+        padding-top: 40px
+        //color: $cLightMain
+        font-weight: bold
+        background: url('/images/giewoo.png') no-repeat center/cover

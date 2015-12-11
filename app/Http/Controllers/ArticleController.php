@@ -40,7 +40,7 @@ class ArticleController extends BaseController {
     }
 
     public function getJsonArticleData ($id) {
-        $article = Article::find($id)->first();
+        $article = Article::find($id);
         return response($article);
     }
 
